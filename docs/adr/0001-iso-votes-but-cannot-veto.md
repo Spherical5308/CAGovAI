@@ -1,0 +1,3 @@
+# The ISO votes but cannot veto
+
+The AI Governance Committee decides by majority of its voting seats; the ISO holds one seat like the others. An ISO dissent is recorded and, if the request is approved anyway, the approval must carry a Director-signed Risk Acceptance. Because SIMM 5305-F and SIMM 150 require CIO and ISO signatures, the ISO's signature is framed as an Assessment Attestation (the assessment is complete and accurate), not an approval. We chose this so security risk is visible and owned at the executive level without making InfoSec the sole gatekeeper, which drives business units around the process.
