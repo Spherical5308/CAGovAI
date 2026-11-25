@@ -22,7 +22,7 @@ Thank you for helping. This framework is only useful if it stays accurate as Cal
 
 ## Pull request steps
 1. Fork the repository (or create a branch if you have write access).
-2. Make your change. If you edit a procedure, check that [PROCEDURE-MAP.md](./PROCEDURE-MAP.md) and the [Authority Crosswalk](./references/Authority-Crosswalk.md) still agree with it.
+2. Make your change. If you edit a procedure, check that [PROCEDURE-MAP.md](./PROCEDURE-MAP.md) and the [Authority Crosswalk](./references/Authority-Crosswalk.md) still agree with it. If you edit a form or the inventory, edit the Markdown or CSV and run `python3 scripts/build_office.py` to rebuild the Word and Excel versions (needs `pip install python-docx openpyxl`); never edit the `.docx` or `.xlsx` by hand.
 3. Add a line to the `Unreleased` section of [CHANGELOG.md](./CHANGELOG.md).
 4. Open a pull request and fill in the template. The link check runs automatically.
 5. Resolve every review conversation. The maintainer merges with **Squash and merge**.

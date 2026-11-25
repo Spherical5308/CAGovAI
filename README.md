@@ -28,6 +28,7 @@ It is grounded in California law and policy (EO N-12-23, SAM 4986, SIMM 5305-F /
 | Form | [Intake Form](./forms/Intake-Form.md) · [Approved Uses Register](./forms/Approved-Uses-Register.md) · [Decision Record](./forms/Decision-Record.md) · [Risk Acceptance](./forms/Risk-Acceptance.md) · [Exception Request](./forms/Exception-Request.md) |
 | Assessment | [AI Impact Assessment](./forms/AI-Impact-Assessment.md) · [Workforce Impact Assessment](./forms/Workforce-Impact-Assessment.md) · plus State forms SIMM 5305-F, SIMM 150, SIMM 5310-C (linked, not copied) |
 | Inventory | [AI Inventory templates and field guide](./inventory/) |
+| Word and Excel | [Fillable Word versions of every form and assessment](./forms/word/) · [AI Inventory workbook](./inventory/AI-Inventory.xlsx) |
 
 ## Key design choices
 - **One front door for all AI**, with GenAI requirements layered on ([ADR-0002](./docs/adr/0002-one-front-door-for-all-ai.md)).
