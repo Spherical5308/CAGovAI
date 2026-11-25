@@ -1,0 +1,27 @@
+# Changelog
+
+Notable changes to CAGovAI. Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versions follow `MAJOR.MINOR.PATCH`: MAJOR changes the framework's shape (decision rights, tiers, scope); MINOR adds or substantially revises a document; PATCH corrects citations or wording.
+
+## [Unreleased]
+### Added
+- Contributor and community files: CONTRIBUTING, Code of Conduct, SECURITY policy, issue and pull request templates, CODEOWNERS.
+- Link-check workflow and script.
+
+## [0.1.0] - 2026-11-24
+First public draft.
+### Added
+- Procedure map, glossary and four decision records (ISO votes without veto; one intake for all AI; approve Tools once; procurement as enforcement gate).
+- AI Governance Policy and AI Governance Committee Charter.
+- Standards: Acceptable Use; Data and Tier Floor; Autonomy and Agent.
+- Procedures: Request and Approval; AI Inventory; Monitoring and Re-review; AI Incident Handling; Exceptions.
+- Forms and assessments: Intake Form, Approved Uses Register, Decision Record, Risk Acceptance, Exception Request, AI Impact Assessment, Workforce Impact Assessment.
+- AI Inventory CSV templates and field guide.
+- Authority Crosswalk (SAM, SIMM, Government Code, Civil Code, NIST AI RMF).
+- Non-Executive Branch adoption note.
+- Licensing: CC BY 4.0 for documents, MIT for code.
+### Changed
+- CDT submission routed by tier and procurement route (CDT PS-033, June 30, 2026; SAM 4986.9 rev. 11/2025).
+- Citations corrected against current text (GC 7929.210, 8592.45, 11546.45.5, 11549.66; SAM 5305.5; GC 12270–12279; Civil Code 3111).
+
+[Unreleased]: https://github.com/Spherical5308/cagovai/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/Spherical5308/cagovai/releases/tag/v0.1.0

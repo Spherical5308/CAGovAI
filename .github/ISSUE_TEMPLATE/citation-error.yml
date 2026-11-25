@@ -1,0 +1,41 @@
+name: Citation or legal error
+description: A citation is wrong, outdated, or doesn't say what the document claims.
+title: "[Citation] "
+labels: ["citation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for checking our sources. Please don't include non-public information from your organisation.
+  - type: input
+    id: file
+    attributes:
+      label: File and section
+      placeholder: e.g. procedures/01-Request-and-Approval.md, section 4
+    validations:
+      required: true
+  - type: input
+    id: citation
+    attributes:
+      label: Citation as written
+      placeholder: e.g. SAM 4986.9(A)
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong
+      description: What the source actually says, quoted briefly.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Link to the official source
+      placeholder: https://leginfo.legislature.ca.gov/... or https://www.dgs.ca.gov/Resources/SAM/...
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: Suggested fix

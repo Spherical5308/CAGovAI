@@ -1,0 +1,29 @@
+name: Adoption question
+description: Ask how to adopt, adapt or interpret part of the framework.
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Questions help everyone. Please keep details generic: don't post internal system names, people's names or non-public information.
+  - type: input
+    id: area
+    attributes:
+      label: Which document or step?
+      placeholder: e.g. Autonomy and Agent Standard, section 3
+  - type: dropdown
+    id: entity
+    attributes:
+      label: Type of State Entity
+      options:
+        - Executive Branch department
+        - Constitutional office or other non-Executive Branch entity
+        - Agency (super-agency)
+        - Other / prefer not to say
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true
