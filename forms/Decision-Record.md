@@ -48,6 +48,8 @@ Dissent recorded? ☐ No ☐ Yes — Risk Acceptance required before approval ta
 |---|---|
 | CDT consultation (Moderate/High) | [case, date, outcome] |
 | Director decision (High) | ☐ Approved ☐ Rejected · [date] |
+| Residual risk (from the AI Impact Assessment, [Rating Scales](./Rating-Scales.md)) | ☐ Low ☐ Medium, risk owner: ☐ High, Director accepted in writing on [date] until [date] |
+| Added to the Risk Register / POAM (SIMM 5305-B) | ☐ Not needed ☐ Yes, by the ISO on [date] |
 | Request ID issued | |
 | AI Inventory updated | [date] |
 | Next Re-review | |

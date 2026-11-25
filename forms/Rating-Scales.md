@@ -37,11 +37,17 @@ Use the highest column that applies.
 | **Medium** | Low | Medium | High |
 | **High** | Medium | High | High |
 
-## What a residual Level means for the decision
-This handling is a recommendation of this framework, not a requirement of law or SAM/SIMM.
+## Risk tolerance and who accepts residual risk
+This table is [State Entity]'s documented **AI risk tolerance**. NIST AI RMF expects each organisation to set and document its own tolerance (GOVERN 1.3, MAP 1.5), and SAM 5305.6 requires "a clear expression of risk tolerance for the organization". Adjust it if your entity's tolerance differs.
 
-| Residual Level | Recommended handling | Accepted by |
-|---|---|---|
-| Low | Accept. Record it in the assessment. | The Use Case owner |
-| Medium | Accept only with a named owner for each mitigation and a measure in the monitoring plan, checked at Re-review. | The decider for the Request's tier (Triage Panel, Committee, or Director for High) |
-| High | Recommend "Do not proceed", or "Proceed with conditions" that bring it to Medium before go-live. If the decider still approves, record the reasons on the Decision Record. | The Director, and a Risk Acceptance if a voting seat dissents |
+The Director is accountable for all risks to [State Entity] (SAM 5305.1; SIMM 5305-B), and NIST AI RMF GOVERN 2.3 places decisions about AI risk with executive leadership. Under the [Committee Charter](../policy/AI-Governance-Committee-Charter.md), the Triage Panel and the Committee decide on the Director's behalf for Low and Moderate Requests, so they accept residual risk within this tolerance as part of their decision. Anything above it goes to the Director.
+
+| Residual Level | Within tolerance? | Handling | Accepted by, and where it is recorded |
+|---|---|---|---|
+| Low | Yes | Accept. Monitor through normal Re-review. | The decider for the Request's tier, as part of the decision. Recorded in the assessment. |
+| Medium | Yes, with controls | Accept only with a named owner for each mitigation and a measure in the monitoring plan, checked at Re-review (NIST AI RMF MANAGE 1.3, MANAGE 1.4). | The decider for the Request's tier, as part of the decision. Recorded on the Decision Record, with the risk owner named. |
+| High | No | Do not proceed until the risk is brought to Medium or below; NIST AI RMF says development and deployment "should cease in a safe manner until risks can be sufficiently managed". The usual answer is "Proceed with conditions" that bring it down before go-live. | Only the Director can accept a High residual risk, in writing on the Decision Record, for a set period no longer than the next Re-review. |
+
+Information security and privacy risks that remain at Medium or High also go on [State Entity]'s Risk Register and Plan of Action and Milestones (SIMM 5305-B), kept by the ISO, with a risk owner and review date (SAM 4986.11, SAM 5305.1). SIMM 5305-B rates risks on a five-level scale (Very Low to Very High, after NIST SP 800-30). When the ISO enters an AI risk there, map Low to Low, Medium to Moderate and High to High, and use the register's own chart if it gives a different result.
+
+A recorded dissent by the ISO (or by the Privacy Officer or Chief Counsel on a matter within their legal duties) is handled separately: the approval waits for a Director-signed [Risk Acceptance](./Risk-Acceptance.md) whatever the Level (Committee Charter, section 4.3).
