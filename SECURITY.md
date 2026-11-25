@@ -3,7 +3,7 @@
 CAGovAI is a set of policy documents and templates, not running software. Security issues here are mostly about **content**: guidance that would weaken a State Entity's security or privacy if followed, or information that should not be public.
 
 ## What to report privately
-Use **[Report a vulnerability](https://github.com/Spherical5308/cagovai/security/advisories/new)** (GitHub private vulnerability reporting) for:
+Use **[Report a vulnerability](https://github.com/Spherical5308/CAGovAI/security/advisories/new)** (GitHub private vulnerability reporting) for:
 - a control, standard or procedure that, if adopted as written, would create a security or privacy weakness;
 - anything in the repository that looks like real non-public information: names, internal systems, network details, completed risk assessments, credentials or personal data;
 - a problem with a script or workflow in this repository.

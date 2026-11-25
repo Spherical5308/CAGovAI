@@ -1,7 +1,7 @@
 blank_issues_enabled: false
 contact_links:
   - name: Report a security or sensitive-information problem
-    url: https://github.com/Spherical5308/cagovai/security/advisories/new
+    url: https://github.com/Spherical5308/CAGovAI/security/advisories/new
     about: Report privately. Do not open a public issue.
   - name: Report an incident at your State Entity
     url: https://www.cdt.ca.gov/security/policy/
