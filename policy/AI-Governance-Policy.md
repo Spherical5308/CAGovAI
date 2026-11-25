@@ -54,10 +54,10 @@ Every Request receives one **Risk Tier**: Prohibited, Pre-approved, Low, Moderat
 The AI Governance Committee is constituted by the [Committee Charter](./AI-Governance-Committee-Charter.md). No single seat, including the Information Security Officer, may veto a Committee decision. A recorded ISO dissent requires a Director-signed **Risk Acceptance** before the approval takes effect (ADR-0001).
 
 ### 4.5 Required assessments
-Each Risk Tier requires the cumulative **Assessment Package** set out in the [Request and Approval Procedure](../procedures/01-Request-and-Approval.md#5-assessment-package). At a minimum, every GenAI Tool must have a SIMM 5305-F (or SIMM 150 for general office productivity) and a SIMM 5310-C Privacy Threshold Assessment, unless exempted by SAM 4986.9 (SAM 4986.11(C)).
+Each Risk Tier requires the cumulative **Assessment Package** set out in the [Request and Approval Procedure](../procedures/01-Request-and-Approval.md#6-assessment-package). At a minimum, every GenAI Tool must have a SIMM 5305-F (or SIMM 150 for general office productivity) and a SIMM 5310-C Privacy Threshold Assessment, unless exempted by SAM 4986.9 (SAM 4986.11(C)).
 
 ### 4.6 CDT consultation *(EB)*
-Completed SIMM 5305-F or SIMM 150 assessments are submitted to the California Department of Technology through the New Technology Consultation and Assessment request for all risk levels. Moderate and High Requests must complete CDT consultation before contract award (SAM 4986.9).
+[State Entity] decides its own Requests; CDT reviews and consults but does not approve. When a completed SIMM 5305-F or SIMM 150 goes to the California Department of Technology, and whether consultation must finish before award, depends on the Risk Tier and the procurement route, as set out in [Procedure 01, section 4](../procedures/01-Request-and-Approval.md#4-cdt-submission-and-consultation) (SAM 4986.9; CDT PS-033). In summary: Low is kept on file and goes to CDT only where the route still requires it; Moderate is submitted and awaits CDT review; High is submitted and requires CDT consultation before proceeding.
 
 ### 4.7 Procurement
 No purchase requisition, solicitation, renewal or contract amendment that provides or materially relies on AI may proceed without an approved **Request ID**. All IT and telecommunications solicitations and contracts include the GenAI disclosure language required by SAM 4986.9(A) (ADR-0004).

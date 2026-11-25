@@ -134,13 +134,13 @@ The Risk Tier is the **highest** of: the SIMM 5305-F result and every floor belo
 | | Pre-approved | Low | Moderate | High |
 |---|---|---|---|---|
 | **Decider** | Requester's manager attests | Triage Panel | Committee vote | Committee recommends → Director approves |
-| **CDT** | Covered by the Tool's own 5305-F / 150 | Submit 5305-F / 150 via New Technology Consultation request | Submit 5305-F + consult before award (SAM 4986.9) | Submit 5305-F + consult; Agency escalation optional |
+| **CDT** (advises, does not approve) | Covered by the Tool's own assessment | Keep on file; via SITeS do not submit (PS-033); other routes per SAM 4986.9 | Submit; await CDT review, consult if requested | Submit; mandatory consultation; Agency escalation optional |
 | **Target turnaround** (business days from complete package) | Immediate | 10 | 30 | 60 (excl. CDT time) |
 | **Re-review** | When Approved Uses change | On Material Change | Every 2 years + Material Change | Yearly + Material Change |
 | **Records seat reviews** | — | — | Yes | Yes |
 
 ### 4.1 Assessment Package (cumulative)
-The authoritative, current list is in [Procedure 01, section 5](./procedures/01-Request-and-Approval.md#5-assessment-package).
+The authoritative, current list is in [Procedure 01, section 6](./procedures/01-Request-and-Approval.md#6-assessment-package).
 
 | Item | Pre | Low | Mod | High | Authority |
 |---|:-:|:-:|:-:|:-:|---|
@@ -260,4 +260,4 @@ Exceptions are to a **Standard**, never to the Policy. They last at most 12 mont
 - **Business/Program seat:** a standing Deputy Director, rotating yearly. Anyone whose own unit submitted the Request recuses; the requesting program presents but does not vote ([Charter](./policy/AI-Governance-Committee-Charter.md#42-conflicts-of-interest) §4.2).
 - **First Tool's Approved Uses:** a starter register built on the SIMM 150 categories and Oregon's audience columns ([Approved Uses Register](./forms/Approved-Uses-Register.md)).
 - **Prohibited-use list:** the SAM 4986.12 and SIMM 5305-F prohibitions, plus three recommended additions (social scoring, public real-time biometric identification, emotion inference on staff) that adopters can adjust ([Acceptable Use Standard](./standards/Acceptable-Use-Standard.md#4-prohibited-uses) §4).
-- **CDT submission:** SIMM 5305-F says to submit for **all** risk levels, including free tools that touch State data and tools acquired before the form existed, so Low is submitted too.
+- **CDT submission:** CDT PS-033 (6/30/2026) says not to submit Low assessments for SITeS GenAI office-productivity procurements, while SAM 4986.9 (rev. 11/2025) still says submit at all levels. CDT advises and consults; [State Entity] decides. The routing table is in [Procedure 01, section 4](./procedures/01-Request-and-Approval.md#4-cdt-submission-and-consultation).

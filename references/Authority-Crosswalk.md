@@ -22,13 +22,14 @@ Where each State requirement and NIST AI RMF function is met in this framework. 
 | SAM 4986.6 | POC in CDT sandbox with public data; MVP in approved production | [Policy](../policy/AI-Governance-Policy.md) §4.8; [Procedure 01](../procedures/01-Request-and-Approval.md) C3 |
 | SAM 4986.7–.8; SIMM 19H, 45 | Assessments before IT projects; Project Delivery Lifecycle | [Procedure 01](../procedures/01-Request-and-Approval.md) F3 |
 | SAM 4986.9(A); SCM Vol. 2 Ch. 23; SIMM 71B | GenAI procurement: disclosure clause, 5305-F before award, CDT consult for Moderate/High, PTA/PIA, multidisciplinary governance team | [Policy](../policy/AI-Governance-Policy.md) §4.6–4.7; [Charter](../policy/AI-Governance-Committee-Charter.md) §1; ADR-0004 |
+| CDT PS-033 (6/30/2026) | SITeS GenAI office-productivity procurement: Low not submitted to CDT; Moderate reviewed; High mandatory consultation | [Procedure 01](../procedures/01-Request-and-Approval.md) §4 |
 | SAM 4986.9(B) | Vendor evaluation for Moderate/High | Assessment Package "Vendor evaluation" |
 | SAM 4986.10 | Privacy and disclosure | [Data and Tier Floor Standard](../standards/Data-and-Tier-Floor-Standard.md) §4; [Policy](../policy/AI-Governance-Policy.md) §4.9 |
 | SAM 4986.11; SIMM 5340-A, 5340-C; SAM 5335 | Incident reporting; NIST AI RMF; risk register; SSP; monitoring; Zero Trust | [Procedure 03](../procedures/03-Monitoring-and-Re-review.md); [Procedure 04](../procedures/04-AI-Incident-Handling.md) |
 | SAM 4986.12 | Acceptable use; prohibited content; human verification | [Acceptable Use Standard](../standards/Acceptable-Use-Standard.md) |
 | SAM 4986.13 | Role-based GenAI training | [Acceptable Use Standard](../standards/Acceptable-Use-Standard.md) §2; [Workforce Impact Assessment](../forms/Workforce-Impact-Assessment.md) §5 |
 | SAM 5305.5 | Information asset classification | [Data and Tier Floor Standard](../standards/Data-and-Tier-Floor-Standard.md) §1 |
-| SIMM 5305-F | GenAI risk assessment, all tiers; Part 2 for Moderate/High; CIO/ISO signatures; Labor Relations copy; submit to CDT | [Procedure 01](../procedures/01-Request-and-Approval.md) Stage D; ADR-0001 |
+| SIMM 5305-F | GenAI risk assessment, all tiers; Part 2 for Moderate/High; CIO/ISO signatures; Labor Relations copy; CDT submission by tier and route | [Procedure 01](../procedures/01-Request-and-Approval.md) Stage D; ADR-0001 |
 | SIMM 150 | Office-productivity GenAI assessment | [Procedure 01](../procedures/01-Request-and-Approval.md) D1; [Approved Uses Register](../forms/Approved-Uses-Register.md) |
 | SIMM 5310-C | Privacy Threshold and Impact Assessments | [Data and Tier Floor Standard](../standards/Data-and-Tier-Floor-Standard.md) §4 |
 
