@@ -1,4 +1,4 @@
-# CAGovAI
+# CAGovAI: AI Governance Framework for California State Entities
 
 An open, adoptable AI governance framework for California State Entities: policy, committee charter, standards, procedures, forms, assessments and an AI inventory, built around one workflow for a business unit to request, assess, approve and monitor a use of AI, from everyday office GenAI to autonomous agents in IT.
 
