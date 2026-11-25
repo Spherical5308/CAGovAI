@@ -50,7 +50,7 @@ Use it whenever a Use Case is not **Pre-approved**: the Tool is new, the use is 
 | D5 | CIO + ISO | Sign SIMM 5305-F / 150 as an **Assessment Attestation**. |
 | D6 | CIO | Send a copy of the SIMM 5305-F to the Labor Relations Officer and tick the Labor Relations acknowledgment. |
 | D7 | Coordinator | Confirm the package is complete. The **final Risk Tier** is the highest of the SIMM 5305-F result and the Tier Floors. Turnaround clock starts. |
-| D8 | Coordinator | Submit to CDT, or keep on file, as [section 4](#4-cdt-submission-and-consultation) requires for the tier and procurement route *(EB)*. |
+| D8 | Coordinator | Submit to CDT, or keep on file, as [section 4](#4-cdt-submission-and-consultation) requires for the tier and procurement route. |
 
 ### Stage E: Decide
 | Tier | Who | Action | Target |
@@ -71,7 +71,7 @@ If the ISO dissents on an approved item, the approval waits for a Director-signe
 | F5 | Coordinator | Mark the Use Case **Active**. |
 
 ## 4. CDT submission and consultation
-*(EB)* CDT reviews and advises; the decision stays with [State Entity]. CDT's rules have changed during 2025–2026 and differ by procurement route, so the Coordinator confirms the current rule with CDT when the first Request on a new route arrives.
+SAM 4986.9 applies to all State Entities, including constitutional offices; the SITeS route below is written for Executive Branch entities (see the [Non-Executive Branch adoption note](../docs/Non-Executive-Branch-Adoption.md)). CDT reviews and advises; the decision stays with [State Entity]. CDT's rules have changed during 2025–2026 and differ by procurement route, so the Coordinator confirms the current rule with CDT when the first Request on a new route arrives.
 
 | Tier | Procured through SITeS (GenAI office productivity tools) | Any other route (incl. free tools that touch State data, renewals, in-house builds) |
 |---|---|---|

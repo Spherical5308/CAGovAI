@@ -37,7 +37,7 @@ It is grounded in California law and policy (EO N-12-23, SAM 4986, SIMM 5305-F /
 - **Procurement is the enforcement gate** ([ADR-0004](./docs/adr/0004-procurement-gate-requires-request-id.md)).
 
 ## Adopting it
-Replace bracketed placeholders such as `[State Entity]` with your own names. Sections marked *(EB)* apply to Executive Branch State Entities; others may adopt them voluntarily.
+Replace bracketed placeholders such as `[State Entity]` with your own names. Sections marked *(EB)* rest on SAM chapters that bind Executive Branch State Entities. Constitutional offices and other non-Executive Branch entities should adopt the whole framework and swap in their own authority; several GenAI chapters (SAM 4986.4, .9, .10, .11) apply to every State Entity anyway. See the [Non-Executive Branch adoption note](./docs/Non-Executive-Branch-Adoption.md).
 
 ## License
 - Documents, forms and templates: [Creative Commons Attribution 4.0 International](./LICENSE) (CC BY 4.0).

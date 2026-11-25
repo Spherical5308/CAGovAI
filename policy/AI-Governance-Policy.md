@@ -9,7 +9,7 @@
 | **Next review** | 12 months after the effective date, and whenever SAM 4986 or SIMM 5305-F is revised |
 | **Supersedes** | [prior GenAI guidance, if any] |
 
-> Template note: replace every `[bracketed]` value. Terms in **bold capitals** are defined in [GLOSSARY.md](../GLOSSARY.md). Sections marked *(EB)* are mandatory for Executive Branch State Entities; other State Entities may adopt them voluntarily.
+> Template note: replace every `[bracketed]` value. Terms in **bold capitals** are defined in [GLOSSARY.md](../GLOSSARY.md). Sections marked *(EB)* rest on SAM chapters that bind Executive Branch State Entities. Other State Entities, including constitutional offices, should still adopt them and substitute their own authority; see the [Non-Executive Branch adoption note](../docs/Non-Executive-Branch-Adoption.md).
 
 ## 1. Purpose
 This policy sets how [State Entity] decides whether, and on what terms, it will acquire, build or use AI. It exists so that AI improves services to Californians while risks to the public, to State data and to the workforce are identified, owned and managed before and during use, as required by Executive Order N-12-23 and SAM 4986.
@@ -56,8 +56,8 @@ The AI Governance Committee is constituted by the [Committee Charter](./AI-Gover
 ### 4.5 Required assessments
 Each Risk Tier requires the cumulative **Assessment Package** set out in the [Request and Approval Procedure](../procedures/01-Request-and-Approval.md#6-assessment-package). At a minimum, every GenAI Tool must have a SIMM 5305-F (or SIMM 150 for general office productivity) and a SIMM 5310-C Privacy Threshold Assessment, unless exempted by SAM 4986.9 (SAM 4986.11(C)).
 
-### 4.6 CDT consultation *(EB)*
-[State Entity] decides its own Requests; CDT reviews and consults but does not approve. When a completed SIMM 5305-F or SIMM 150 goes to the California Department of Technology, and whether consultation must finish before award, depends on the Risk Tier and the procurement route, as set out in [Procedure 01, section 4](../procedures/01-Request-and-Approval.md#4-cdt-submission-and-consultation) (SAM 4986.9; CDT PS-033). In summary: Low is kept on file and goes to CDT only where the route still requires it; Moderate is submitted and awaits CDT review; High is submitted and requires CDT consultation before proceeding.
+### 4.6 CDT consultation
+[State Entity] decides its own Requests; CDT reviews and consults but does not approve. When a completed SIMM 5305-F or SIMM 150 goes to the California Department of Technology, and whether consultation must finish before award, depends on the Risk Tier and the procurement route, as set out in [Procedure 01, section 4](../procedures/01-Request-and-Approval.md#4-cdt-submission-and-consultation) (SAM 4986.9, which applies to all State Entities; CDT PS-033, which covers Executive Branch SITeS purchases). In summary: Low is kept on file and goes to CDT only where the route still requires it; Moderate is submitted and awaits CDT review; High is submitted and requires CDT consultation before proceeding.
 
 ### 4.7 Procurement
 No purchase requisition, solicitation, renewal or contract amendment that provides or materially relies on AI may proceed without an approved **Request ID**. All IT and telecommunications solicitations and contracts include the GenAI disclosure language required by SAM 4986.9(A) (ADR-0004).

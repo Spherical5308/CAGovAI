@@ -44,7 +44,7 @@ Each quarter the Coordinator:
 ## 6. Reports produced from the inventory
 | Report | Content | Audience | When |
 |---|---|---|---|
-| **High-risk inventory** *(EB)* | High-tier Use Cases and high-risk automated decision systems, one submission per system, with the fields CDT requests; a nil return if there are none | CDT | CDT's annual high-risk ADS data collection, and on request (SAM 4986.3; GC 11546.45.5) |
+| **High-risk inventory** *(EB under SAM 4986.3; others check GC 11546.45.5)* | High-tier Use Cases and high-risk automated decision systems, one submission per system, with the fields CDT requests; a nil return if there are none | CDT | CDT's annual high-risk ADS data collection, and on request (SAM 4986.3; GC 11546.45.5) |
 | **Public AI use summary** | Tool, purpose in plain words, Risk Tier, whether the public interacts with it, contact for questions | Public website | Quarterly |
 | **Training-data documentation** | For GenAI that [State Entity] built or substantially modified and makes available to Californians: high-level summary of datasets and the elements Civil Code 3111 requires | Public website | Initially by the SAM 4986.4 date, then annually |
 | **Committee dashboard** | Counts by tier and status, turnaround against targets, overdue items | Committee | Quarterly |

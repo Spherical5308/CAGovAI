@@ -1,7 +1,7 @@
 # AI Governance Procedure Map
 
 **Status:** Draft for agreement, before any policy, procedure or form is written.
-**Applies to:** California Executive Branch State Entities. Non-Executive Branch State Entities may adopt it; sections marked *(EB)* are mandatory only for the Executive Branch.
+**Applies to:** California Executive Branch State Entities. Non-Executive Branch State Entities, including constitutional offices, should adopt it as written; see the [adoption note](./docs/Non-Executive-Branch-Adoption.md). Sections marked *(EB)* rest on Executive-Branch-only SAM chapters.
 **Terms:** Every capitalised term is defined in [GLOSSARY.md](./GLOSSARY.md). Decisions behind the shape are in [docs/adr/](./docs/adr/).
 
 > This map is not legal advice. Each citation should be checked against the current SAM, SIMM, SCM and Government Code before adoption.
