@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2552 370" width="2552" height="370" font-family="Segoe UI, Arial, Helvetica, sans-serif">
+<title>AI governance process overview</title>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#333"/></marker></defs>
+<rect width="2552" height="370" fill="#FFFFFF"/>
+<rect x="16" y="0" width="540" height="34" fill="#1F3864" stroke="#FFFFFF"/>
+<text x="286.0" y="22.0" text-anchor="middle" font-size="14" font-weight="600" fill="#FFFFFF">Intake</text>
+<rect x="556" y="0" width="360" height="34" fill="#1F3864" stroke="#FFFFFF"/>
+<text x="736.0" y="22.0" text-anchor="middle" font-size="14" font-weight="600" fill="#FFFFFF">Screen</text>
+<rect x="916" y="0" width="360" height="34" fill="#1F3864" stroke="#FFFFFF"/>
+<text x="1096.0" y="22.0" text-anchor="middle" font-size="14" font-weight="600" fill="#FFFFFF">Triage and assess</text>
+<rect x="1276" y="0" width="540" height="34" fill="#1F3864" stroke="#FFFFFF"/>
+<text x="1546.0" y="22.0" text-anchor="middle" font-size="14" font-weight="600" fill="#FFFFFF">Decide</text>
+<rect x="1816" y="0" width="360" height="34" fill="#1F3864" stroke="#FFFFFF"/>
+<text x="1996.0" y="22.0" text-anchor="middle" font-size="14" font-weight="600" fill="#FFFFFF">Approve and act</text>
+<rect x="2176" y="0" width="360" height="34" fill="#1F3864" stroke="#FFFFFF"/>
+<text x="2356.0" y="22.0" text-anchor="middle" font-size="14" font-weight="600" fill="#FFFFFF">Operate</text>
+<rect x="0" y="0" width="16" height="34" fill="#1F3864"/>
+<line x1="556" y1="34" x2="556" y2="370" stroke="#C5CFDD" stroke-dasharray="4 4"/>
+<line x1="916" y1="34" x2="916" y2="370" stroke="#C5CFDD" stroke-dasharray="4 4"/>
+<line x1="1276" y1="34" x2="1276" y2="370" stroke="#C5CFDD" stroke-dasharray="4 4"/>
+<line x1="1816" y1="34" x2="1816" y2="370" stroke="#C5CFDD" stroke-dasharray="4 4"/>
+<line x1="2176" y1="34" x2="2176" y2="370" stroke="#C5CFDD" stroke-dasharray="4 4"/>
+<polyline points="166.0,202.0 228.0,202.0" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="286.0,165.0 286.0,121.0" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#arr)"/>
+<text x="291.0" y="159.0" font-size="10.5" fill="#333" paint-order="stroke" stroke="#FFFFFF" stroke-width="3">Yes</text>
+<polyline points="344.0,202.0 406.0,202.0" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#arr)"/>
+<text x="348.0" y="197.0" font-size="10.5" fill="#333" paint-order="stroke" stroke="#FFFFFF" stroke-width="3">No / unsure</text>
+<polyline points="526.0,202.0 586.0,202.0" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="706.0,202.0 768.0,202.0" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="826.0,239.0 826.0,283.0" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#arr)"/>
+<text x="831.0" y="253.0" font-size="10.5" fill="#333" paint-order="stroke" stroke="#FFFFFF" stroke-width="3">Yes</text>
+<polyline points="884.0,202.0 946.0,202.0" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#arr)"/>
+<text x="888.0" y="197.0" font-size="10.5" fill="#333" paint-order="stroke" stroke="#FFFFFF" stroke-width="3">No</text>
+<polyline points="1066.0,202.0 1126.0,202.0" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="1246.0,202.0 1308.0,202.0" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="1424.0,202.0 1455.0,202.0 1455.0,90.0 1486.0,90.0" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#arr)"/>
+<text x="1460.0" y="150.0" font-size="10.5" fill="#333" paint-order="stroke" stroke="#FFFFFF" stroke-width="3">Low</text>
+<polyline points="1424.0,202.0 1486.0,202.0" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#arr)"/>
+<text x="1428.0" y="197.0" font-size="10.5" fill="#333" paint-order="stroke" stroke="#FFFFFF" stroke-width="3">Mod. / High</text>
+<polyline points="1546.0,233.0 1546.0,288.0" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#arr)"/>
+<text x="1551.0" y="247.0" font-size="10.5" fill="#333" paint-order="stroke" stroke="#FFFFFF" stroke-width="3">Rejected</text>
+<polyline points="1606.0,202.0 1636.0,202.0 1636.0,314.0 1666.0,314.0" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#arr)"/>
+<text x="1641.0" y="262.0" font-size="10.5" fill="#333" paint-order="stroke" stroke="#FFFFFF" stroke-width="3">Moderate</text>
+<polyline points="1606.0,202.0 1666.0,202.0" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#arr)"/>
+<text x="1610.0" y="197.0" font-size="10.5" fill="#333" paint-order="stroke" stroke="#FFFFFF" stroke-width="3">High</text>
+<polyline points="1606.0,90.0 1832.0,90.0 1832.0,202.0 1846.0,202.0" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="1786.0,314.0 1816.0,314.0 1816.0,202.0 1846.0,202.0" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="1786.0,202.0 1846.0,202.0" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="1966.0,202.0 2026.0,202.0" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="2146.0,202.0 2206.0,202.0" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="2326.0,202.0 2388.0,202.0" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#arr)"/>
+<polyline points="2266.0,228.0 2266.0,283.0" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#arr)"/>
+<text x="2271.0" y="242.0" font-size="10.5" fill="#333" paint-order="stroke" stroke="#FFFFFF" stroke-width="3">Incident</text>
+<polyline points="2446.0,165.0 2446.0,154.0 1006.0,154.0 1006.0,171.0" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#arr)"/>
+<text x="2451.0" y="159.0" font-size="10.5" fill="#333" paint-order="stroke" stroke="#FFFFFF" stroke-width="3">Yes</text>
+<rect x="46.0" y="176.0" width="120" height="52" rx="26.0" fill="#D5E8D4" stroke="#82B366" stroke-width="1.3"/>
+<text text-anchor="middle" font-size="10.5" fill="#111">
+<tspan x="106.0" y="193.0">AI idea, or</tspan>
+<tspan x="106.0" y="205.5">vendor discloses</tspan>
+<tspan x="106.0" y="218.0">GenAI</tspan>
+</text>
+<polygon points="286.0,165.0 344.0,202.0 286.0,239.0 228.0,202.0" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.3"/>
+<text text-anchor="middle" font-size="10.5" fill="#111">
+<tspan x="286.0" y="193.0">Approved Use</tspan>
+<tspan x="286.0" y="205.5">and no</tspan>
+<tspan x="286.0" y="218.0">Trigger?</tspan>
+</text>
+<rect x="226.0" y="59.0" width="120" height="62.0" rx="6" fill="#D5E8D4" stroke="#82B366" stroke-width="1.3"/>
+<text text-anchor="middle" font-size="10.5" fill="#111">
+<tspan x="286.0" y="74.8">Pre-approved:</tspan>
+<tspan x="286.0" y="87.2">manager attests;</tspan>
+<tspan x="286.0" y="99.8">logged in</tspan>
+<tspan x="286.0" y="112.2">Inventory</tspan>
+</text>
+<rect x="406.0" y="176.0" width="120" height="52" rx="6" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.3"/>
+<text text-anchor="middle" font-size="10.5" fill="#111">
+<tspan x="466.0" y="199.2">Submit Request</tspan>
+<tspan x="466.0" y="211.8">(Intake Form)</tspan>
+</text>
+<rect x="586.0" y="176.0" width="120" height="52" rx="6" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.3"/>
+<text text-anchor="middle" font-size="10.5" fill="#111">
+<tspan x="646.0" y="199.2">Coordinator:</tspan>
+<tspan x="646.0" y="211.8">completeness check</tspan>
+</text>
+<polygon points="826.0,165.0 884.0,202.0 826.0,239.0 768.0,202.0" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.3"/>
+<text text-anchor="middle" font-size="10.5" fill="#111">
+<tspan x="826.0" y="199.2">Prohibited</tspan>
+<tspan x="826.0" y="211.8">use?</tspan>
+</text>
+<rect x="766.0" y="283.0" width="120" height="62.0" rx="6" fill="#F8CECC" stroke="#B85450" stroke-width="1.3"/>
+<text text-anchor="middle" font-size="10.5" fill="#111">
+<tspan x="826.0" y="298.8">Prohibited: Chief</tspan>
+<tspan x="826.0" y="311.2">Counsel confirms;</tspan>
+<tspan x="826.0" y="323.8">closed, appealable</tspan>
+<tspan x="826.0" y="336.2">to Committee</tspan>
+</text>
+<rect x="946.0" y="171.0" width="120" height="62.0" rx="6" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.3"/>
+<text text-anchor="middle" font-size="10.5" fill="#111">
+<tspan x="1006.0" y="186.8">Triage: tier from</tspan>
+<tspan x="1006.0" y="199.2">Triggers, Tier</tspan>
+<tspan x="1006.0" y="211.8">Floors, Autonomy</tspan>
+<tspan x="1006.0" y="224.2">Level</tspan>
+</text>
+<rect x="1126.0" y="176.0" width="120" height="52" rx="6" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.3"/>
+<text text-anchor="middle" font-size="10.5" fill="#111">
+<tspan x="1186.0" y="193.0">Complete the</tspan>
+<tspan x="1186.0" y="205.5">tier&#x27;s Assessment</tspan>
+<tspan x="1186.0" y="218.0">Package</tspan>
+</text>
+<polygon points="1366.0,165.0 1424.0,202.0 1366.0,239.0 1308.0,202.0" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.3"/>
+<text text-anchor="middle" font-size="10.5" fill="#111">
+<tspan x="1366.0" y="205.5">Risk Tier?</tspan>
+</text>
+<rect x="1486.0" y="64.0" width="120" height="52" rx="6" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.3"/>
+<text text-anchor="middle" font-size="10.5" fill="#111">
+<tspan x="1546.0" y="81.0">Triage Panel</tspan>
+<tspan x="1546.0" y="93.5">decides Low;</tspan>
+<tspan x="1546.0" y="106.0">consent agenda</tspan>
+</text>
+<rect x="1486.0" y="171.0" width="120" height="62.0" rx="6" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.3"/>
+<text text-anchor="middle" font-size="10.5" fill="#111">
+<tspan x="1546.0" y="186.8">Committee votes</tspan>
+<tspan x="1546.0" y="199.2">(majority; ISO</tspan>
+<tspan x="1546.0" y="211.8">dissent needs Risk</tspan>
+<tspan x="1546.0" y="224.2">Acceptance)</tspan>
+</text>
+<rect x="1486.0" y="288.0" width="120" height="52" rx="6" fill="#F8CECC" stroke="#B85450" stroke-width="1.3"/>
+<text text-anchor="middle" font-size="10.5" fill="#111">
+<tspan x="1546.0" y="311.2">Rejected: closed</tspan>
+<tspan x="1546.0" y="323.8">and logged</tspan>
+</text>
+<rect x="1666.0" y="288.0" width="120" height="52" rx="6" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.3"/>
+<text text-anchor="middle" font-size="10.5" fill="#111">
+<tspan x="1726.0" y="305.0">Moderate: CDT</tspan>
+<tspan x="1726.0" y="317.5">review before</tspan>
+<tspan x="1726.0" y="330.0">award</tspan>
+</text>
+<rect x="1666.0" y="176.0" width="120" height="52" rx="6" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.3"/>
+<text text-anchor="middle" font-size="10.5" fill="#111">
+<tspan x="1726.0" y="193.0">High: CDT</tspan>
+<tspan x="1726.0" y="205.5">consultation, then</tspan>
+<tspan x="1726.0" y="218.0">Director approves</tspan>
+</text>
+<rect x="1846.0" y="176.0" width="120" height="52" rx="6" fill="#D5E8D4" stroke="#82B366" stroke-width="1.3"/>
+<text text-anchor="middle" font-size="10.5" fill="#111">
+<tspan x="1906.0" y="193.0">Approved: Request</tspan>
+<tspan x="1906.0" y="205.5">ID issued;</tspan>
+<tspan x="1906.0" y="218.0">Inventory updated</tspan>
+</text>
+<rect x="2026.0" y="176.0" width="120" height="52" rx="6" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.3"/>
+<text text-anchor="middle" font-size="10.5" fill="#111">
+<tspan x="2086.0" y="193.0">Procure / build</tspan>
+<tspan x="2086.0" y="205.5">with Request ID;</tspan>
+<tspan x="2086.0" y="218.0">go live</tspan>
+</text>
+<rect x="2206.0" y="176.0" width="120" height="52" rx="6" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.3"/>
+<text text-anchor="middle" font-size="10.5" fill="#111">
+<tspan x="2266.0" y="199.2">Operate and</tspan>
+<tspan x="2266.0" y="211.8">monitor (SAM 5335)</tspan>
+</text>
+<polygon points="2446.0,165.0 2504.0,202.0 2446.0,239.0 2388.0,202.0" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.3"/>
+<text text-anchor="middle" font-size="10.5" fill="#111">
+<tspan x="2446.0" y="186.8">Re-review</tspan>
+<tspan x="2446.0" y="199.2">due or</tspan>
+<tspan x="2446.0" y="211.8">Material</tspan>
+<tspan x="2446.0" y="224.2">Change?</tspan>
+</text>
+<rect x="2206.0" y="283.0" width="120" height="62.0" rx="6" fill="#F8CECC" stroke="#B85450" stroke-width="1.3"/>
+<text text-anchor="middle" font-size="10.5" fill="#111">
+<tspan x="2266.0" y="298.8">Incident: ISO or</tspan>
+<tspan x="2266.0" y="311.2">CIO may suspend;</tspan>
+<tspan x="2266.0" y="323.8">Committee rules in</tspan>
+<tspan x="2266.0" y="336.2">10 days</tspan>
+</text>
+</svg>
