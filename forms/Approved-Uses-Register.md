@@ -4,6 +4,12 @@
 >
 > Categories follow SIMM 150 (General Office Productivity). The audience columns follow the State of Oregon's Copilot use matrix (107-004-200, Attachment A), cited as a reference.
 
+> **How to complete this register**
+> - **Who:** the Tool owner proposes it as part of the Request that introduces the Tool (Procedure 01, section 5). The Committee approves it.
+> - Start from the defaults below. For each row and audience, choose one of the four Legend values, and tighten any that do not suit the Tool or your data. Remove rows for features the Tool does not have.
+> - Adding a row or loosening a value later is a Material Change and goes back to the Committee.
+> - Once approved, publish the register where staff look for AI guidance and link it from the AI Inventory (`approved_uses_register`).
+
 | | |
 |---|---|
 | Tool ID / Request ID | |

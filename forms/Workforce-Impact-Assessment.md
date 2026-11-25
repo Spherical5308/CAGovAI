@@ -4,6 +4,13 @@
 >
 > Section structure is adapted from the aipolicytracker.org AI Workforce Impact Assessment template (CC BY 4.0); changes were made. See [NOTICE.md](../NOTICE.md).
 
+> **How to complete this form**
+> - **Who:** the Use Case owner drafts it. The Labor Relations Officer completes section 3 and signs.
+> - **When:** as part of the Assessment Package. Start early: if notice to a union or meet and confer is needed, it can take longer than the rest of the package.
+> - **Send to:** the AI Governance Coordinator, with the rest of the Assessment Package.
+> - In section 1, use one row per classification affected. Give numbers of positions, not names of employees.
+> - If you don't know an answer yet, write what you know and when you will know more. Do not leave it blank.
+
 **Request number:** · **Use Case:** · **Units affected:** · **Prepared by:** · **Labor Relations reviewer:** · **Date:**
 
 ## 1. Roles and tasks affected

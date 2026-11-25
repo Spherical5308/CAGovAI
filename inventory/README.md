@@ -54,6 +54,22 @@ The example rows are illustrations; delete them before use. Store the live inven
 | `public_summary` | One sentence for the public page | ● |
 | `notes` | | |
 
+## pre-approved-log.csv
+| Field | What to record | Public |
+|---|---|:-:|
+| `entry_date` | Date the manager attested | |
+| `tool_id` | Links to tools.csv | |
+| `approved_use_category` | SIMM 150 category from the Tool's Approved Uses Register | |
+| `audience` | Personal / unit, Agency-wide, or Public / external (register columns) | |
+| `business_unit` | Unit using the Tool | |
+| `user_or_group` | Person or group covered by the attestation | |
+| `manager_attesting` | Manager who attested that no Trigger applies | |
+| `training_current` | Yes / No: SAM 4986.13 GenAI training is current | |
+| `aup_acknowledged` | Yes / No: Acceptable Use Standard acknowledged | |
+
+## Excel workbook
+[AI-Inventory.xlsx](./AI-Inventory.xlsx) holds the same three registers as sheets, with dropdowns for fixed values (tier, Autonomy Level, status, Yes/No and so on), a `tool_id` dropdown fed from the Tools sheet, and this field guide. Public fields have a lighter blue header. It is generated from these CSV files and this page by [`scripts/build_office.py`](../scripts/build_office.py); use whichever format suits your entity.
+
 ## Exports
 - **CDT high-risk inventory:** filter `risk_tier = High` or `high_risk_ads = Yes`; add any fields CDT's data call requests.
 - **Public AI use summary:** the **Public** columns for rows with status Active.
