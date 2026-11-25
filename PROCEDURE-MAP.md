@@ -10,79 +10,17 @@
 
 ## 1. The process on one page
 
-```mermaid
-flowchart TD
-    A([Business unit has an AI idea<br/>or vendor discloses GenAI]) --> B{Inside an approved Tool's<br/>Approved Uses, and no Trigger?}
-    B -- Yes --> PA[Pre-approved:<br/>manager attests, AUP + training confirmed]
-    PA --> INV[(AI Inventory)]
-    B -- No / unsure --> R[Submit Request<br/>Intake Form]
-    R --> S1[Coordinator: completeness check]
-    S1 --> S2{Prohibited-use screen}
-    S2 -- Hit --> P[Prohibited:<br/>Chief Counsel confirms]
-    P --> AP{Appeal?}
-    AP -- Yes --> C
-    AP -- No --> X([Closed, logged])
-    S2 -- Clear --> T[Triage:<br/>tier from Trigger floors,<br/>Autonomy Level, data class]
-    T --> PK[Business unit completes<br/>the tier's Assessment Package]
-    PK --> L{Tier}
-    L -- Low --> TP[Triage Panel decides]
-    TP --> CA[Monthly consent agenda<br/>to Committee]
-    L -- Moderate --> C[AI Governance Committee vote]
-    L -- High --> C
-    C -- Moderate approved --> CDT1[CDT consultation<br/>before award]
-    C -- High recommended --> CDT2[CDT consultation]
-    CDT2 --> DIR[Director approves<br/>optional Agency escalation]
-    CA --> APR
-    CDT1 --> APR
-    DIR --> APR[Approved: Request ID issued]
-    APR --> PROC[Procurement / build<br/>Request ID on requisition]
-    PROC --> OPS[Operate + monitor<br/>SAM 5335]
-    OPS --> RR{Re-review due or<br/>Material Change?}
-    RR -- Yes --> T
-    OPS --> INC{Incident?}
-    INC -- Yes --> SUS[ISO or CIO may suspend;<br/>Committee confirms/lifts in 10 bd]
-    APR --> INV
-    C -- Rejected --> X
-```
+![AI governance process overview: intake, prohibited-use screen, triage and Assessment Package, decision by Risk Tier (Triage Panel for Low, Committee vote for Moderate and High, CDT review or consultation, Director approval for High), Request ID issued, operate and monitor, with Re-review and incident suspension loops](./docs/diagrams/process-overview.svg)
+
+Open the [full-size image](./docs/diagrams/process-overview.svg) or edit the [draw.io source](./docs/diagrams/process-overview.drawio). Section 2 shows who does each step.
 
 ---
 
 ## 2. Who does what (swimlanes)
 
-```mermaid
-flowchart LR
-    subgraph BU[Business Unit]
-      b1[Identify Use Case] --> b2[Submit Request] --> b3[Complete Assessment Package] --> b4[Operate, report changes and incidents]
-    end
-    subgraph CO[AI Governance Coordinator - CIO office]
-      c1[Completeness check] --> c2[Prohibited screen] --> c3[Triage + assign tier] --> c4[Route + build agenda] --> c5[Issue Request ID, update Inventory] --> c6[Schedule Re-review]
-    end
-    subgraph TPN[Triage Panel]
-      t1[Decide Low tier]
-    end
-    subgraph GC[AI Governance Committee]
-      g1[Vote Moderate / recommend High] --> g2[Consent agenda for Low] --> g3[Confirm or lift suspensions] --> g4[Approve Exceptions]
-    end
-    subgraph SP[Specialists]
-      s1[Chief Counsel: confirm Prohibited] 
-      s2[Privacy Officer: PTA / PIA]
-      s3[ISO + CIO: Assessment Attestation on 5305-F / 150]
-      s4[Advisory seats: workforce, accessibility, records, procurement input]
-    end
-    subgraph EX[Director / Agency / CDT]
-      e1[CDT consultation Moderate + High]
-      e2[Director approves High, signs Risk Acceptance + Exceptions]
-      e3[Optional Agency escalation]
-    end
-    b2 --> c1
-    c2 --> s1
-    c3 --> b3
-    b3 --> s2 & s3
-    c4 --> t1 & g1
-    g1 --> e1 --> e2
-    t1 --> c5
-    e2 --> c5
-```
+![AI Request and Approval swimlane: seven lanes (Business unit, AI Governance Coordinator, Specialists, Triage Panel, AI Governance Committee, Director / Agency, CDT) across six phases (Intake, Screen, Triage and assess, Decide, Approve and act, Operate)](./docs/diagrams/request-approval-swimlane.svg)
+
+Open the [full-size image](./docs/diagrams/request-approval-swimlane.svg), or edit the [draw.io source](./docs/diagrams/request-approval-swimlane.drawio) in draw.io / diagrams.net, from which it can be exported to Visio (VSDX), PowerPoint-ready PNG or PDF. See [docs/diagrams](./docs/diagrams/README.md).
 
 ---
 
@@ -200,16 +138,9 @@ The authoritative, current list is in [Procedure 01, section 6](./procedures/01-
 A Request that introduces a Tool also proposes its **Approved Uses**. The Tool is tiered on its worst Approved Use. Once approved, later Use Cases inside those Approved Uses are Pre-approved (ADR-0003). Changing the Approved Uses list is a Material Change.
 
 ### 6.2 Legacy Use registration (90 days from adoption)
-```mermaid
-flowchart LR
-    a[Policy adopted] --> b[90-day window opens]
-    b --> c[Business units + IT register every AI in use,<br/>incl. vendor-added SaaS AI features]
-    c --> d{Prohibited screen}
-    d -- Hit --> e[Stop use]
-    d -- Clear --> f[Flag as Legacy Use; keep running]
-    f --> g[Normal triage + package on a schedule]
-    b --> h[After 90 days: unregistered AI is a policy violation]
-```
+![Legacy Use registration: policy adopted, 90-day window opens, units and IT register all AI in use including vendor-added SaaS features, prohibited uses stop, others are flagged as Legacy Use and keep running until normal triage (High first); after 90 days unregistered AI is a security incident](./docs/diagrams/legacy-use-registration.svg)
+
+Edit the [draw.io source](./docs/diagrams/legacy-use-registration.drawio). Full steps are in [Procedure 02 §4](./procedures/02-AI-Inventory.md).
 
 ### 6.3 Incident and suspension
 ISO runs the incident under the State Entity's Incident Response Plan (SIMM 5340-A; 5340-C if personal information is breached) and reports to oversight agencies (SAM 4986.11). Either the ISO or the CIO may suspend the Use Case immediately. The Committee confirms, lifts, or orders Re-review within 10 business days. Suspension is a stop, not a decision on whether the use should exist (ADR-0001 still holds).
