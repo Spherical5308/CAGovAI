@@ -3,6 +3,11 @@
 Notable changes to CAGovAI. Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versions follow `MAJOR.MINOR.PATCH`: MAJOR changes the framework's shape (decision rights, tiers, scope); MINOR adds or substantially revises a document; PATCH corrects citations or wording.
 
 ## [Unreleased]
+
+## [0.3.1] - 2026-11-25
+Training link fixes.
+### Added
+- Monthly external link check (`scripts/check_external_links.py`, `.github/workflows/external-links.yml`). On the 1st of each month it fetches every external link, especially the CalHR and CDT training pages, and opens or updates a "Broken external links" issue assigned to the repository owner. A clean run closes the issue. It can also be run by hand from the Actions tab.
 ### Fixed
 - Training outline: State course links now point to CalHR's current Certificate Series Collection and Training Registration pages (the CalLearns link opened a login page), the September 2026 CDT training guide, and current course names.
 
@@ -47,7 +52,8 @@ First public draft.
 - CDT submission routed by tier and procurement route (CDT PS-033, June 30, 2026; SAM 4986.9 rev. 11/2025).
 - Citations corrected against current text (GC 7929.210, 8592.45, 11546.45.5, 11549.66; SAM 5305.5; GC 12270–12279; Civil Code 3111).
 
-[Unreleased]: https://github.com/Spherical5308/CAGovAI/compare/v0.3.0...HEAD
+[Unreleased]: https://github.com/Spherical5308/CAGovAI/compare/v0.3.1...HEAD
+[0.3.1]: https://github.com/Spherical5308/CAGovAI/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/Spherical5308/CAGovAI/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/Spherical5308/CAGovAI/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/Spherical5308/CAGovAI/releases/tag/v0.1.0
