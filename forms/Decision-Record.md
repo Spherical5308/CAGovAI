@@ -2,6 +2,12 @@
 
 > Completed by the AI Governance Coordinator for every decided Request and Re-review. One record per decision.
 
+> **How to complete this form**
+> - **Who:** the AI Governance Coordinator, at or right after the meeting.
+> - Record each voting seat's vote, or "Recused". A delegate's name goes beside the seat. Check quorum before recording the outcome.
+> - Every condition needs an owner and a due date. The Request ID is not issued until any required Risk Acceptance is signed.
+> - Keep the record with the Use Case record in the AI Inventory.
+
 | | |
 |---|---|
 | Request number | |

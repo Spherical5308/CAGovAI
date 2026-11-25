@@ -11,6 +11,9 @@ Word versions of every form and assessment in [forms/](../). Open one in Microso
 | AI Standard Exception Request | [Exception-Request.docx](./Exception-Request.docx) | [Exception-Request.md](../Exception-Request.md) |
 | AI Impact Assessment | [AI-Impact-Assessment.docx](./AI-Impact-Assessment.docx) | [AI-Impact-Assessment.md](../AI-Impact-Assessment.md) |
 | AI Workforce Impact Assessment | [Workforce-Impact-Assessment.docx](./Workforce-Impact-Assessment.docx) | [Workforce-Impact-Assessment.md](../Workforce-Impact-Assessment.md) |
+| Rating Scales (reference, not a form) | [Rating-Scales.docx](./Rating-Scales.docx) | [Rating-Scales.md](../Rating-Scales.md) |
+
+Each form opens with **How to complete this form**: who fills it in, when, and where it goes. Forms that ask for Likelihood, Severity or a risk Level print the Rating Scales as an appendix.
 
 To download from GitHub, open the file and click **Download raw file**.
 
@@ -20,7 +23,7 @@ To download from GitHub, open the file and click **Download raw file**.
 - The forms are not locked, so you can reword them. If you want staff to fill in only the fields, use Review → Restrict Editing → "Filling in forms" in your own copy.
 
 ## How they are made
-[`scripts/build_office.py`](../../scripts/build_office.py) builds these files from the Markdown forms, which stay the source of truth: ☐ becomes a checkbox, `[placeholder]` and empty table cells become text fields, and each open question gets an answer box. To change a form, edit its Markdown and run:
+[`scripts/build_office.py`](../../scripts/build_office.py) builds these files from the Markdown forms, which stay the source of truth: ☐ becomes a checkbox, `[placeholder]` and empty table cells become text fields, each open question gets an answer box, and an `<!-- include: Rating-Scales.md -->` line adds that file as an appendix. To change a form, edit its Markdown and run:
 
 ```
 pip install python-docx openpyxl

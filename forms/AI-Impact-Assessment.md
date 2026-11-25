@@ -4,6 +4,14 @@
 >
 > Section structure is adapted from the aipolicytracker.org AI Impact Assessment template (CC BY 4.0); changes were made. See [NOTICE.md](../NOTICE.md).
 
+> **How to complete this form**
+> - **Who:** the Use Case owner, with the people who know the system. The Privacy Officer and the ISO may add to sections 4 and 5.
+> - **When:** after the Coordinator issues your Assessment Package (Procedure 01, step C2). The decision clock starts only when the whole package is complete.
+> - **Send to:** the AI Governance Coordinator, with the rest of the Assessment Package.
+> - Answer every question in plain language. If something does not apply, write "Not applicable" and say why; do not leave it blank.
+> - **Ratings** in sections 4 and 7 use the [Rating Scales](./Rating-Scales.md), printed at the end of the Word version.
+> - Describe security weaknesses in general terms. Technical detail belongs in the security review, which is kept confidential.
+
 **Request number:** · **Use Case:** · **Risk Tier:** · **Prepared by:** · **Date:**
 
 ## 1. Context (NIST Map 1)
@@ -31,22 +39,22 @@
 Describe the test data and how it represents real use. For a POC, testing uses public data only (SAM 4986.6).
 
 ## 4. Harm analysis (NIST Map 5.1; AI 600-1 risk areas)
-Mark each area relevant or not. For each relevant one, describe the harm, its likelihood and severity (Low / Medium / High), and the mitigation.
+Mark each area relevant or not. For each relevant one, describe the harm, rate its Likelihood and Severity (Low / Medium / High), read the Level from the matrix, and describe the mitigation. Use the [Rating Scales](./Rating-Scales.md). Rate with the controls already in place; the residual rating after mitigation goes in section 7.
 
-| Area | Relevant? | Harm | Likelihood | Severity | Mitigation | Owner |
-|---|:-:|---|---|---|---|---|
-| Confabulation (wrong or invented output relied on) | | | | | | |
-| Harmful bias or unequal treatment | | | | | | |
-| Privacy (exposure, inference, re-identification) | | | | | | |
-| Information security (injection, data leakage, poisoning) | | | | | | |
-| Harmful or dangerous content | | | | | | |
-| Information integrity (misinformation released publicly) | | | | | | |
-| Intellectual property | | | | | | |
-| Human-AI configuration (over-reliance, automation bias) | | | | | | |
-| Environmental and cost | | | | | | |
-| Value chain (vendor, model or data dependency) | | | | | | |
-| Workforce effects (see Workforce Impact Assessment) | | | | | | |
-| Access to services (people who cannot or will not use AI) | | | | | | |
+| Area | Relevant? | Harm | Likelihood | Severity | Level | Mitigation | Owner |
+|---|:-:|---|---|---|---|---|---|
+| Confabulation (wrong or invented output relied on) | | | | | | | |
+| Harmful bias or unequal treatment | | | | | | | |
+| Privacy (exposure, inference, re-identification) | | | | | | | |
+| Information security (injection, data leakage, poisoning) | | | | | | | |
+| Harmful or dangerous content | | | | | | | |
+| Information integrity (misinformation released publicly) | | | | | | | |
+| Intellectual property | | | | | | | |
+| Human-AI configuration (over-reliance, automation bias) | | | | | | | |
+| Environmental and cost | | | | | | | |
+| Value chain (vendor, model or data dependency) | | | | | | | |
+| Workforce effects (see Workforce Impact Assessment) | | | | | | | |
+| Access to services (people who cannot or will not use AI) | | | | | | | |
 
 ## 5. Human oversight (NIST Govern 3.2, Map 3.5, Manage 2.4)
 1. Autonomy Level and why it is the lowest that meets the need.
@@ -60,6 +68,8 @@ Mark each area relevant or not. For each relevant one, describe the harm, its li
 3. What goes in the public AI use summary.
 
 ## 7. Residual risk and recommendation
+List each risk still Medium or High after mitigation. Rate it again with the [Rating Scales](./Rating-Scales.md); the scales also say who should accept each Level.
+
 | Residual risk | Level | Accepted by |
 |---|---|---|
 | | | |
@@ -69,3 +79,5 @@ Recommendation: ☐ Proceed ☐ Proceed with conditions: ☐ Do not proceed
 | Use Case owner | Signature | Date |
 |---|---|---|
 | | | |
+
+<!-- include: Rating-Scales.md -->

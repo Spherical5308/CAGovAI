@@ -26,7 +26,7 @@ import re
 from docx import Document
 from docx.enum.section import WD_ORIENT
 from docx.enum.table import WD_TABLE_ALIGNMENT
-from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_BREAK
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Inches, Pt, RGBColor
@@ -56,7 +56,7 @@ ANSWER_PROMPTS = (
     "Describe the test data",
 )
 # Forms with wide tables are laid out in landscape.
-LANDSCAPE = {"AI-Impact-Assessment", "Approved-Uses-Register", "Risk-Acceptance", "Workforce-Impact-Assessment"}
+LANDSCAPE = {"Rating-Scales", "AI-Impact-Assessment", "Approved-Uses-Register", "Risk-Acceptance", "Workforce-Impact-Assessment"}
 
 
 # =========================================================================
@@ -152,7 +152,7 @@ def text_field(hint="Click or tap to enter text.", label="", multiline=True):
 # Word: inline Markdown
 # =========================================================================
 LINK = re.compile(r"\[([^\]]+)\]\([^)]+\)")
-TOKEN = re.compile(r"(\*\*.+?\*\*|\[[^\]]*\]|☐|↦[^·☐]*)")
+TOKEN = re.compile(r"(\*\*.+?\*\*|\*[^*\s][^*]*\*|\[[^\]]*\]|☐|↦[^·☐]*)")
 
 
 def add_inline(p, text, base_bold=False, size=None):
@@ -167,6 +167,8 @@ def add_inline(p, text, base_bold=False, size=None):
             p._p.append(checkbox())
         elif part.startswith("**") and part.endswith("**"):
             p._p.append(_run(part[2:-2], bold=True, size=size))
+        elif len(part) > 2 and part.startswith("*") and part.endswith("*"):
+            p._p.append(_run(part[1:-1], italic=True, bold=base_bold, size=size))
         elif part.startswith("[") and part.endswith("]"):
             hint = part[1:-1].strip()
             if hint.endswith(":"):  # "[Request ID: ]" -> label + field
@@ -288,6 +290,8 @@ def split_row(line):
 
 
 def add_table(doc, rows, landscape):
+    if doc.paragraphs:  # keep the lead-in sentence or heading on the table's page
+        doc.paragraphs[-1].paragraph_format.keep_with_next = True
     header, body = rows[0], rows[2:]
     n = len(header)
     blank_header = all(h == "" for h in header)
@@ -337,9 +341,15 @@ def add_table(doc, rows, landscape):
                 weights.append(max(4, len(header[j]) + 1))
                 continue
             lens = [len(LINK.sub(r"\1", v)) if v else 16 for v in col] + [len(header[j]) + 2]
-            weights.append(min(55, max(5, max(lens))))
+            weights.append(min(55, max(9, max(lens))))
         total = sum(weights)
         widths = [page_w * w / total for w in weights]
+        # no column narrower than 0.75 in, so short values like "Medium" never wrap
+        short = [j for j, w in enumerate(widths) if w < 0.75]
+        if short and len(short) < n:
+            spare = page_w - 0.75 * len(short)
+            rest = sum(weights[j] for j in range(n) if j not in short)
+            widths = [0.75 if j in short else spare * weights[j] / rest for j in range(n)]
     fix_widths(t, widths)
     doc.add_paragraph().paragraph_format.space_after = Pt(2)
 
@@ -447,19 +457,56 @@ def setup_document(title, landscape):
     return doc
 
 
+INCLUDE = re.compile(r"<!--\s*include:\s*(\S+)\s*-->")
+# Reference pages built as Word documents but without answer boxes.
+REFERENCE_ONLY = {"Rating-Scales"}
+
+
+def expand_includes(lines, base_dir):
+    """Replace <!-- include: File.md --> with that file as an appendix on a new page.
+    GitHub hides the comment, so the Markdown form keeps just its link to the file."""
+    out = []
+    for line in lines:
+        m = INCLUDE.fullmatch(line.strip())
+        if not m:
+            out.append(line)
+            continue
+        with open(os.path.join(base_dir, m.group(1)), encoding="utf-8") as fh:
+            inc = fh.read().splitlines()
+        out += ["<!-- pagebreak -->", "<!-- noanswers -->"]
+        for l in inc:
+            if l.startswith("# "):
+                l = "## Appendix: " + l[2:]
+            elif l.startswith("## "):
+                l = "#" + l
+            out.append(l)
+        out.append("<!-- /noanswers -->")
+    return out
+
+
 def build_form(md_path, out_path):
     name = os.path.splitext(os.path.basename(md_path))[0]
     landscape = name in LANDSCAPE
     with open(md_path, encoding="utf-8") as fh:
-        lines = fh.read().splitlines()
+        lines = expand_includes(fh.read().splitlines(), os.path.dirname(md_path))
     title = next((l[2:].strip() for l in lines if l.startswith("# ")), name)
     doc = setup_document(LINK.sub(r"\1", title), landscape)
+    no_answers = name in REFERENCE_ONLY
 
     i = 0
     while i < len(lines):
         line = lines[i]
         s = line.strip()
         if not s:
+            i += 1
+            continue
+        if s.startswith("<!--"):
+            if "pagebreak" in s:
+                doc.add_paragraph().add_run().add_break(WD_BREAK.PAGE)
+            elif "/noanswers" in s:
+                no_answers = name in REFERENCE_ONLY
+            elif "noanswers" in s:
+                no_answers = True
             i += 1
             continue
         if s.startswith("# "):
@@ -482,12 +529,25 @@ def build_form(md_path, out_path):
             while i < len(lines) and lines[i].strip().startswith(">"):
                 block.append(lines[i].strip()[1:].strip())
                 i += 1
-            paras = [x for x in "\n".join(block).split("\n\n")]
-            for txt in paras:
+            # paragraphs split on blank ">" lines; each "- " line is its own bullet
+            paras = []
+            for chunk in "\n".join(block).split("\n\n"):
+                for ln in chunk.split("\n"):
+                    if ln.startswith("- ") or not paras or paras[-1][0] or paras[-1][1] == "":
+                        paras.append([ln.startswith("- "), ln[2:] if ln.startswith("- ") else ln])
+                    else:
+                        paras[-1][1] += " " + ln
+                paras.append([False, ""])
+            for is_bullet, txt in paras:
                 if not txt.strip():
                     continue
                 p = doc.add_paragraph()
-                add_inline(p, " ".join(txt.split("\n")), size=9.5)
+                if is_bullet:
+                    p.paragraph_format.left_indent = Inches(0.2)
+                    p.paragraph_format.first_line_indent = Inches(-0.15)
+                    p.paragraph_format.space_after = Pt(1)
+                    p._p.append(_run("•  ", size=9.5))
+                add_inline(p, txt, size=9.5)
                 for r in p._p.iter(qn("w:r")):
                     rpr = r.find(qn("w:rPr"))
                     if rpr is not None and rpr.find(qn("w:color")) is None:
@@ -527,7 +587,7 @@ def build_form(md_path, out_path):
                 if k:
                     p._p.append(OxmlElement("w:br"))
                 add_inline(p, chunk)
-            if numbered and "☐" not in text and not re.search(r":\s*$", text):
+            if numbered and not no_answers and "☐" not in text and not re.search(r":\s*$", text):
                 p.paragraph_format.keep_with_next = True
                 answer_box(doc)
         else:
@@ -538,7 +598,7 @@ def build_form(md_path, out_path):
                 text += " " + lines[i].strip()
             p = doc.add_paragraph()
             add_inline(p, text)
-            if text.startswith(ANSWER_PROMPTS):
+            if text.startswith(ANSWER_PROMPTS) and not no_answers:
                 p.paragraph_format.keep_with_next = True
                 answer_box(doc)
         i += 1

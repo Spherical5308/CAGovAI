@@ -3,6 +3,8 @@
 > Submit to the AI Governance Coordinator at [channel]. Answer in plain language. If you don't know an answer, write "Unknown"; the Coordinator will help. Do not paste confidential or personal data into this form.
 >
 > This form feeds SIMM 5305-F; questions marked ↦ 5305-F carry straight into it so you answer them only once.
+>
+> **What happens next:** the Coordinator checks the form within 2 business days and either returns it with a list of what is missing or assigns a Request number. The Coordinator then sets a provisional Risk Tier and sends you the Assessment Package for that tier. If you use Autonomy Level A2 or A3, attach the permission table asked for in question 20.
 
 **Request number:** [assigned by Coordinator] · **Date received:** [ ] · **Type:** ☐ New Use Case ☐ New Tool + Use Case ☐ Legacy Use registration ☐ Vendor GenAI disclosure ☐ Material Change to approved Use Case [Request ID: ]
 
