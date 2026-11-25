@@ -2,7 +2,24 @@
 
 > Role-based training for [State Entity], built to meet SAM 4986.13 *(EB)* (new 02/2025). SAM 4986.13 requires each Executive Branch State Entity to ensure its people complete the GenAI training their duties need, including the risks and benefits of GenAI and how to use it responsibly, and to require any mandatory GenAI training. It recommends ("should also consider") the audience-based courses that modules A, B, D, E and F below follow. Modules C and G are this framework's additions.
 >
-> SAM 4986.13 sets no completion deadline or refresh cycle. This outline's timing (before first use, then yearly and on major policy change) is a recommendation. Use State-provided courses where they exist, and confirm current offerings with CDT and CalHR; build only what is missing.
+> SAM 4986.13 sets no completion deadline or refresh cycle. This outline's timing (before first use, then yearly and on major policy change) is a recommendation. Use State-provided courses where they exist ([below](#state-provided-courses)), and build only what is missing.
+
+## State-provided courses
+The State already offers general GenAI courses for most audiences. What no State course can cover is your own entity's rules: your Policy, Approved Uses, forms, Triggers and decision process. So each module below is a State course (where one exists) plus a short entity supplement that you build.
+
+The State's catalogue is the CDT [Comprehensive GenAI Training Guide](https://www.cdt.ca.gov/wp-content/uploads/2026/06/Comprehensive-GenAI-Training-Guide-6-2026-FINAL.pdf) (June 2026; check CDT for a newer edition). It groups courses into four audience tiers of its own and does not map them to SAM 4986.13, so the mapping below is this framework's. Offerings, dates and costs change: confirm with CalHR (Training@calhr.ca.gov), CDT (Training@state.ca.gov) and DGS CalPCA (CalPCAonline@dgs.ca.gov) before you commit.
+
+| Module | State-provided course | Build locally |
+|---|---|---|
+| A. Foundations | CalHR and ODI [Foundations of GenAI certificate series](https://calhr.ca.gov/Training/Pages/Foundations-of-GenAI.aspx) (5 courses, about 42 hours, for all State employees, through [CalLearns](https://calhr.geniussis.com/LearnerDashboard.aspx) and ODI CalAcademy). The CalAcademy course "GenAI for Public Professionals" is free to State employees. CDT PACe self-paced eLearning has shorter topics. | Items 3, 7, 8 and 10: your approved Tools and Approved Uses Register, records rules, Prohibited uses P1 to P11, and the acknowledgment. About 20 to 30 minutes. |
+| B. Managers | No manager course specific to GenAI. The CalHR leadership course "Responsible AI: Scaling AI in Your Organization" suits senior managers. | All of module B: attestation, Triggers, T7 workforce rules and Suspensions are this framework's. |
+| C. Use Case owners | None. | All of module C. |
+| D. Purchasing | DGS CalPCA GenAI procurement training. The CDT guide says Designated Purchasing Authority Contacts **must** complete it. | Item 1 (Request ID gate) and your CDT submission route from Procedure 01 §4. |
+| E. Project managers | CDT ["AI Project Management"](https://cdt.ca.gov/workforce-development/generative-ai-training/) and the CDT Project Management domain of the GenAI Technical Training, on top of the Project Delivery Lifecycle course. | Item 3: building approval conditions and monitoring into the schedule. |
+| F. IT and security | CDT [GenAI Technical Training](https://cdt.ca.gov/workforce-development/generative-ai-training/) (Security, Data Analytics, Engineering and Development, Design domains), including "AI Foundations and Use Cases for IT" and "Introduction to Agentic AI for Business Users". The CDT [GenAI Boot Camp](https://www.cdt.ca.gov/workforce-development/gen-ai-bootcamp/) (6 weeks, fee-based, needs CIO approval) is optional depth. | Items 3 and 6: the Autonomy and Agent Standard, and your SIMM 5305-F, SIMM 150 and Risk Register practice. |
+| G. Committee | None specific. CalHR "Responsible AI for Legal Professionals" suits Chief Counsel, and the CDT ITLA, PMLA and ISLA leadership academies include a GenAI course for CIO and ISO seats. | All of module G. |
+
+[genai.ca.gov](https://www.genai.ca.gov/choose-your-journey/procure-tool/take-training/state-staff/) recommends training executives, GenAI leads, legal, labor and privacy staff first, then business owners and technical staff, then the general workforce. The [Rollout Plan](./90-Day-Rollout-Plan.md) trains all staff from Day 0 because the Policy applies to everyone from that date; start the Committee and leadership courses in Phase 1 if you can.
 
 ## Who takes what
 | Audience | Modules | When | SAM 4986.13 basis |
