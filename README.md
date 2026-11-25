@@ -4,7 +4,7 @@ An open, adoptable AI governance framework for California State Entities: policy
 
 It is grounded in California law and policy (EO N-12-23, SAM 4986, SIMM 5305-F / 150 / 5310-C, CDT TL 25-01, GC 11546.45.5, GC 11549.66) and the NIST AI Risk Management Framework.
 
-> **Status:** Foundation. The procedure map is the agreed design; the policy, procedures and forms are being drafted from it.
+> **Status:** First full draft. Ready for review and adaptation; not yet adopted by any State Entity.
 >
 > This is not legal advice and is not an official State of California publication. Check every citation against the current SAM, SIMM, SCM and Government Code before adopting.
 
@@ -12,9 +12,22 @@ It is grounded in California law and policy (EO N-12-23, SAM 4986, SIMM 5305-F /
 
 | Document | What it is |
 |---|---|
-| [PROCEDURE-MAP.md](./PROCEDURE-MAP.md) | The whole process: flowcharts, routing rules, tier matrix, step table, document set |
+| [PROCEDURE-MAP.md](./PROCEDURE-MAP.md) | The whole process on a few pages: flowcharts, routing rules, tier matrix, step table |
 | [GLOSSARY.md](./GLOSSARY.md) | The defined terms every document uses |
 | [docs/adr/](./docs/adr/) | Short records of the key design decisions and why |
+| [references/Authority-Crosswalk.md](./references/Authority-Crosswalk.md) | Where each SAM, SIMM, Government Code and NIST AI RMF requirement is met |
+
+## The document set
+
+| Type | Document |
+|---|---|
+| Policy | [AI Governance Policy](./policy/AI-Governance-Policy.md) |
+| Charter | [AI Governance Committee Charter](./policy/AI-Governance-Committee-Charter.md) |
+| Standard | [Acceptable Use](./standards/Acceptable-Use-Standard.md) · [Data and Tier Floor](./standards/Data-and-Tier-Floor-Standard.md) · [Autonomy and Agent](./standards/Autonomy-and-Agent-Standard.md) |
+| Procedure | [01 Request and Approval](./procedures/01-Request-and-Approval.md) · [02 AI Inventory](./procedures/02-AI-Inventory.md) · [03 Monitoring and Re-review](./procedures/03-Monitoring-and-Re-review.md) · [04 AI Incident Handling](./procedures/04-AI-Incident-Handling.md) · [05 Exceptions](./procedures/05-Exceptions.md) |
+| Form | [Intake Form](./forms/Intake-Form.md) · [Approved Uses Register](./forms/Approved-Uses-Register.md) · [Decision Record](./forms/Decision-Record.md) · [Risk Acceptance](./forms/Risk-Acceptance.md) · [Exception Request](./forms/Exception-Request.md) |
+| Assessment | [AI Impact Assessment](./forms/AI-Impact-Assessment.md) · [Workforce Impact Assessment](./forms/Workforce-Impact-Assessment.md) · plus State forms SIMM 5305-F, SIMM 150, SIMM 5310-C (linked, not copied) |
+| Inventory | [AI Inventory templates and field guide](./inventory/) |
 
 ## Key design choices
 - **One front door for all AI**, with GenAI requirements layered on ([ADR-0002](./docs/adr/0002-one-front-door-for-all-ai.md)).
@@ -24,7 +37,7 @@ It is grounded in California law and policy (EO N-12-23, SAM 4986, SIMM 5305-F /
 - **Procurement is the enforcement gate** ([ADR-0004](./docs/adr/0004-procurement-gate-requires-request-id.md)).
 
 ## Adopting it
-Replace bracketed placeholders such as `[State Entity]` with your own names. Sections marked *(EB)* apply to Executive Branch State Entities; others may adopt them voluntarily.
+Replace bracketed placeholders such as `[State Entity]` with your own names. Sections marked *(EB)* rest on SAM chapters that bind Executive Branch State Entities. Constitutional offices and other non-Executive Branch entities should adopt the whole framework and swap in their own authority; several GenAI chapters (SAM 4986.4, .9, .10, .11) apply to every State Entity anyway. See the [Non-Executive Branch adoption note](./docs/Non-Executive-Branch-Adoption.md).
 
 ## License
 - Documents, forms and templates: [Creative Commons Attribution 4.0 International](./LICENSE) (CC BY 4.0).

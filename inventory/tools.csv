@@ -1,0 +1,2 @@
+tool_id,tool_name,vendor,product_and_model,licence_tier,delivery,hosting,is_genai,approved_data_classes,approved_uses_register,records_export_confirmed,approval_request_id,approval_date,tool_owner,status,notes
+T-0001,[Example enterprise copilot],[Vendor],[Product / model version],Enterprise,SaaS,[CDT or DGS SLP offering],Yes,Public;Internal,../forms/Approved-Uses-Register.md,Yes,R-2026-0001,[date],[CIO delegate],Active,Example row - delete
