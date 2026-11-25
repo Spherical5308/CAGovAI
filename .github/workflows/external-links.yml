@@ -1,0 +1,51 @@
+name: External links
+
+# Monthly check that every external link still works, especially the CalHR and CDT
+# training pages, which move often. Broken links open (or update) an issue assigned
+# to the repository owner; a clean run closes it.
+on:
+  schedule:
+    - cron: "0 15 1 * *" # 1st of each month, 7 AM Pacific standard time
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  external-links:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      LABEL: broken-links
+    steps:
+      # Pinned to a full commit SHA (actions/checkout v4.2.2) so the action can't change underneath us.
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Fetch every external link
+        id: check
+        continue-on-error: true
+        run: python3 scripts/check_external_links.py . --report report.md
+      - name: Open or update the broken-links issue
+        if: steps.check.outcome == 'failure'
+        run: |
+          gh label create "$LABEL" --color d73a4a --description "Found by the monthly external link check" 2>/dev/null || true
+          echo "Run: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" >> report.md
+          n=$(gh issue list --label "$LABEL" --state open --json number --jq '.[0].number')
+          if [ -n "$n" ]; then
+            gh issue comment "$n" --body-file report.md
+          else
+            gh issue create --title "Broken external links" --label "$LABEL" \
+              --assignee "${{ github.repository_owner }}" --body-file report.md
+          fi
+          exit 1
+      - name: Close the broken-links issue when all links work
+        if: steps.check.outcome == 'success'
+        run: |
+          n=$(gh issue list --label "$LABEL" --state open --json number --jq '.[0].number' 2>/dev/null || true)
+          if [ -n "$n" ]; then
+            gh issue close "$n" --comment "The monthly check found no broken links. $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          fi
