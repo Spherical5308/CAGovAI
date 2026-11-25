@@ -3,6 +3,8 @@
 Notable changes to CAGovAI. Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versions follow `MAJOR.MINOR.PATCH`: MAJOR changes the framework's shape (decision rights, tiers, scope); MINOR adds or substantially revises a document; PATCH corrects citations or wording.
 
 ## [Unreleased]
+### Fixed
+- Training outline: State course links now point to CalHR's current Certificate Series Collection and Training Registration pages (the CalLearns link opened a login page), the September 2026 CDT training guide, and current course names.
 
 ## [0.3.0] - 2026-11-25
 Adoption kit.
