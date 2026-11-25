@@ -49,40 +49,9 @@ flowchart TD
 
 ## 2. Who does what (swimlanes)
 
-```mermaid
-flowchart LR
-    subgraph BU[Business Unit]
-      b1[Identify Use Case] --> b2[Submit Request] --> b3[Complete Assessment Package] --> b4[Operate, report changes and incidents]
-    end
-    subgraph CO[AI Governance Coordinator - CIO office]
-      c1[Completeness check] --> c2[Prohibited screen] --> c3[Triage + assign tier] --> c4[Route + build agenda] --> c5[Issue Request ID, update Inventory] --> c6[Schedule Re-review]
-    end
-    subgraph TPN[Triage Panel]
-      t1[Decide Low tier]
-    end
-    subgraph GC[AI Governance Committee]
-      g1[Vote Moderate / recommend High] --> g2[Consent agenda for Low] --> g3[Confirm or lift suspensions] --> g4[Approve Exceptions]
-    end
-    subgraph SP[Specialists]
-      s1[Chief Counsel: confirm Prohibited] 
-      s2[Privacy Officer: PTA / PIA]
-      s3[ISO + CIO: Assessment Attestation on 5305-F / 150]
-      s4[Advisory seats: workforce, accessibility, records, procurement input]
-    end
-    subgraph EX[Director / Agency / CDT]
-      e1[CDT consultation Moderate + High]
-      e2[Director approves High, signs Risk Acceptance + Exceptions]
-      e3[Optional Agency escalation]
-    end
-    b2 --> c1
-    c2 --> s1
-    c3 --> b3
-    b3 --> s2 & s3
-    c4 --> t1 & g1
-    g1 --> e1 --> e2
-    t1 --> c5
-    e2 --> c5
-```
+![AI Request and Approval swimlane: seven lanes (Business unit, AI Governance Coordinator, Specialists, Triage Panel, AI Governance Committee, Director / Agency, CDT) across six phases (Intake, Screen, Triage and assess, Decide, Approve and act, Operate)](./docs/diagrams/request-approval-swimlane.svg)
+
+Open the [full-size image](./docs/diagrams/request-approval-swimlane.svg), or edit the [draw.io source](./docs/diagrams/request-approval-swimlane.drawio) in draw.io / diagrams.net, from which it can be exported to Visio (VSDX), PowerPoint-ready PNG or PDF. See [docs/diagrams](./docs/diagrams/README.md).
 
 ---
 
