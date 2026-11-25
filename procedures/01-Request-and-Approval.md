@@ -108,4 +108,4 @@ Each tier includes everything from the tiers to its left.
 | High-risk automated decision system inventory fields | | | | ● | Coordinator |
 
 ## 7. Records
-The Request, Assessment Package, decision and Request ID are kept with the Use Case record. Completed SIMM 5305-F, SIMM 150 and security reviews are confidential (GC 7929.210) and are kept in a restricted location.
+The Request, Assessment Package, decision and Request ID are kept with the Use Case record. Completed SIMM 5305-F, SIMM 150 and security reviews are treated as confidential (SIMM 5305-F marks completed forms confidential and possibly exempt (GC 7929.210, 8592.45); the exemption turns on whether disclosure would reveal vulnerabilities, so Chief Counsel decides on any records request) and are kept in a restricted location.

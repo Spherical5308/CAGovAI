@@ -44,9 +44,9 @@ Each quarter the Coordinator:
 ## 6. Reports produced from the inventory
 | Report | Content | Audience | When |
 |---|---|---|---|
-| **High-risk inventory** *(EB)* | High-tier Use Cases and high-risk automated decision systems, with the fields CDT requests | CDT | On CDT's request and annual data call (SAM 4986.3; GC 11546.45.5) |
+| **High-risk inventory** *(EB)* | High-tier Use Cases and high-risk automated decision systems, one submission per system, with the fields CDT requests; a nil return if there are none | CDT | CDT's annual high-risk ADS data collection, and on request (SAM 4986.3; GC 11546.45.5) |
 | **Public AI use summary** | Tool, purpose in plain words, Risk Tier, whether the public interacts with it, contact for questions | Public website | Quarterly |
 | **Training-data documentation** | For GenAI that [State Entity] built or substantially modified and makes available to Californians: high-level summary of datasets and the elements Civil Code 3111 requires | Public website | Initially by the SAM 4986.4 date, then annually |
 | **Committee dashboard** | Counts by tier and status, turnaround against targets, overdue items | Committee | Quarterly |
 
-Completed SIMM 5305-F, SIMM 150 and security reviews are never included in a public report (GC 7929.210).
+Completed SIMM 5305-F, SIMM 150 and security reviews are never included in a public report (SIMM 5305-F marks completed forms confidential and possibly exempt (GC 7929.210, 8592.45); the exemption turns on whether disclosure would reveal vulnerabilities, so Chief Counsel decides on any records request).

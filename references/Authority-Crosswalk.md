@@ -6,13 +6,13 @@ Where each State requirement and NIST AI RMF function is met in this framework. 
 | Authority | Requirement (summary) | Where met |
 |---|---|---|
 | Executive Order N-12-23 | Safe, ethical, responsible GenAI adoption; workforce support | [Policy](../policy/AI-Governance-Policy.md) §1, §3; [Workforce Impact Assessment](../forms/Workforce-Impact-Assessment.md) |
-| GC 11546.45.5 (AB 302) | Inventory of high-risk automated decision systems | [Procedure 02](../procedures/02-AI-Inventory.md) §6; inventory field `high_risk_ads` |
-| GC 11549.63–11549.66 (SB 896) | GenAI risk analysis; disclosure of GenAI communications with contact and opt-out | [Policy](../policy/AI-Governance-Policy.md) §4.9; [Acceptable Use Standard](../standards/Acceptable-Use-Standard.md) §3.4; [Autonomy Standard](../standards/Autonomy-and-Agent-Standard.md) §6 |
-| Civil Code 3110–3111 (AB 2013) | Training-data documentation for GenAI made available to Californians | [Procedure 02](../procedures/02-AI-Inventory.md) §6 |
+| GC 11546.45.5 (AB 302) | CDT inventories high-risk automated decision systems and reports annually to the Legislature; each state agency files CDT's data collection, even if it has none | [Procedure 02](../procedures/02-AI-Inventory.md) §6; inventory field `high_risk_ads` |
+| GC 11549.63–11549.66 (SB 896) | GenAI risk analysis; disclaimer and human-contact information when GenAI communicates directly about services and benefits (the opt-out comes from SAM 4986.10). AB 2412 (2025–26) would widen 11549.66 to all public communications; check its status | [Policy](../policy/AI-Governance-Policy.md) §4.9; [Acceptable Use Standard](../standards/Acceptable-Use-Standard.md) §3.4; [Autonomy Standard](../standards/Autonomy-and-Agent-Standard.md) §6 |
+| Civil Code 3110–3111 (AB 2013) | Developers post training-data documentation for public GenAI; SAM 4986.4 applies the duty to State Entities and Civil Code 3111 supplies the required elements | [Procedure 02](../procedures/02-AI-Inventory.md) §6 |
 | AB 2885; SAM 4819.2 | Definition of AI | [Glossary](../GLOSSARY.md) "AI" |
 | Civil Code 1798 et seq. (Information Practices Act) | Protect personal information | [Data and Tier Floor Standard](../standards/Data-and-Tier-Floor-Standard.md) |
-| GC 7920.000 et seq. (CPRA); GC 12270 et seq.; SAM 1600 | Public records and retention | [Policy](../policy/AI-Governance-Policy.md) §4.10 |
-| GC 7929.210 | Security assessments exempt from disclosure | [Procedure 01](../procedures/01-Request-and-Approval.md) §6; [Procedure 02](../procedures/02-AI-Inventory.md) §6 |
+| GC 7920.000 et seq. (CPRA); GC 12270–12279 (State Records Management Act); SAM 1600 | Public records and retention | [Policy](../policy/AI-Governance-Policy.md) §4.10 |
+| GC 7929.210; GC 8592.45 | Information security records exempt where disclosure would reveal vulnerabilities (case by case) | [Procedure 01](../procedures/01-Request-and-Approval.md) §6; [Procedure 02](../procedures/02-AI-Inventory.md) §6 |
 | GC 11135; GC 11546.7 | Non-discrimination and accessibility | [Acceptable Use Standard](../standards/Acceptable-Use-Standard.md) P6; accessibility review in Assessment Package |
 | GC 3512 et seq. (Dills Act) | Meet-and-confer on matters within scope of representation | [Workforce Impact Assessment](../forms/Workforce-Impact-Assessment.md) §3 |
 | SAM 4986.1–.2 | Scope and definitions | [Policy](../policy/AI-Governance-Policy.md) §2 |
@@ -28,7 +28,7 @@ Where each State requirement and NIST AI RMF function is met in this framework. 
 | SAM 4986.11; SIMM 5340-A, 5340-C; SAM 5335 | Incident reporting; NIST AI RMF; risk register; SSP; monitoring; Zero Trust | [Procedure 03](../procedures/03-Monitoring-and-Re-review.md); [Procedure 04](../procedures/04-AI-Incident-Handling.md) |
 | SAM 4986.12 | Acceptable use; prohibited content; human verification | [Acceptable Use Standard](../standards/Acceptable-Use-Standard.md) |
 | SAM 4986.13 | Role-based GenAI training | [Acceptable Use Standard](../standards/Acceptable-Use-Standard.md) §2; [Workforce Impact Assessment](../forms/Workforce-Impact-Assessment.md) §5 |
-| SAM 5305.5 | Information asset classification | [Data and Tier Floor Standard](../standards/Data-and-Tier-Floor-Standard.md) §1 |
+| SAM 5305.5 | Inventory and classify information assets; FIPS 199 categorisation; personal and medical information at least FIPS 199 Moderate | [Data and Tier Floor Standard](../standards/Data-and-Tier-Floor-Standard.md) §1 |
 | SIMM 5305-F | GenAI risk assessment, all tiers; Part 2 for Moderate/High; CIO/ISO signatures; Labor Relations copy; CDT submission by tier and route | [Procedure 01](../procedures/01-Request-and-Approval.md) Stage D; ADR-0001 |
 | SIMM 150 | Office-productivity GenAI assessment | [Procedure 01](../procedures/01-Request-and-Approval.md) D1; [Approved Uses Register](../forms/Approved-Uses-Register.md) |
 | SIMM 5310-C | Privacy Threshold and Impact Assessments | [Data and Tier Floor Standard](../standards/Data-and-Tier-Floor-Standard.md) §4 |

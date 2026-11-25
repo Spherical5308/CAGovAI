@@ -9,7 +9,7 @@
 This Standard decides two things: **when** a Use Case needs a Request, and the **minimum Risk Tier** that Request can receive.
 
 ## 1. Data classes
-Use [State Entity]'s information asset classification (SAM 5305.5). The SIMM 5305-F data-type checklist maps onto these classes:
+SAM 5305.5 requires [State Entity] to classify its information assets and give each a FIPS 199 categorisation, with personal and medical information at least FIPS 199 Moderate. It does not prescribe class names. This Standard uses the classes below, which follow the SIMM 5305-F data types and the "confidential, proprietary and sensitive" wording of SAM 4986.10; map them to [State Entity]'s own scheme if it differs.
 
 | Class | Examples (SIMM 5305-F data types) |
 |---|---|

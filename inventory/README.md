@@ -58,4 +58,4 @@ The example rows are illustrations; delete them before use. Store the live inven
 - **CDT high-risk inventory:** filter `risk_tier = High` or `high_risk_ads = Yes`; add any fields CDT's data call requests.
 - **Public AI use summary:** the **Public** columns for rows with status Active.
 
-Never export or publish completed SIMM 5305-F, SIMM 150 or security reviews (GC 7929.210).
+Never export or publish completed SIMM 5305-F, SIMM 150 or security reviews. They are treated as confidential; see the [Policy, section 4.9](../policy/AI-Governance-Policy.md#49-transparency-and-disclosure).

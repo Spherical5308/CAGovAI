@@ -91,7 +91,7 @@ flowchart LR
 ### 3.1 Triggers that require a Request
 A Use Case needs a Request (instead of Pre-approved) if **any** is true:
 1. The Tool is not yet approved, or the Use Case falls outside its Approved Uses.
-2. It uses confidential, sensitive or personal data (Civil Code 1798.3, 1798.29; SAM 5305.5 classification).
+2. It uses confidential, sensitive or personal data (Civil Code 1798.3, 1798.29; classified under SAM 5305.5).
 3. Its output is public-facing or goes to people outside the State Entity.
 4. It informs or makes decisions about people (eligibility, benefits, enforcement, employment).
 5. Its Autonomy Level is A2 or A3.

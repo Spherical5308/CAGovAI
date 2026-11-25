@@ -68,7 +68,7 @@ GenAI Tools follow the Cloud Computing Policy (SAM 4983.1; SAM 4986.5). Proofs o
 ### 4.9 Transparency and disclosure
 1. Content created or substantially altered by GenAI and provided to people for government services carries a disclosure, a way to contact a person, and a way to opt out of interacting with GenAI (GC 11549.66; SAM 4986.10).
 2. [State Entity] publishes a public summary of its AI Use Cases from the **AI Inventory**. Where [State Entity] built or substantially modified a GenAI system made available to Californians, it posts training-data documentation and updates it annually (Civil Code 3111; SAM 4986.4).
-3. Completed risk and security assessments are confidential and are not published (GC 7929.210).
+3. Completed risk and security assessments are treated as confidential and are not published. SIMM 5305-F marks them confidential and possibly exempt from disclosure (GC 7929.210, 8592.45). That exemption covers what would reveal vulnerabilities and is decided case by case, so Chief Counsel decides any Public Records Act request for them.
 
 ### 4.10 Records
 Prompts, outputs and agent action logs created in the course of State business are records. They are retained under [State Entity]'s records retention schedule (SAM 1600; GC 12270 et seq.) and are subject to the California Public Records Act. A Tool may not be approved for Moderate or High Use Cases unless it can retain and export these records.
@@ -109,7 +109,7 @@ Departures from a Standard may be granted only through the [Exceptions Procedure
 Using AI outside this Policy may result in removal of access and disciplinary action consistent with applicable law and bargaining agreements. Any AI found in use without approval after the 90-day Legacy Use registration window is treated as an information security incident.
 
 ## 7. Authorities
-Executive Order N-12-23; GC 11546.45.5, 11549.63–11549.66, 7929.210, 12270 et seq., 3512 et seq.; Civil Code 1798 et seq., 3110–3111; SAM 1600, 4819.2, 4983.1, 4986–4986.13, 5305.5, 5310, 5335; SIMM 19H, 140, 141, 150, 22, 5305-F, 5310-C, 5340-A, 5340-C; SCM Vol. 2 Ch. 23; NIST AI 100-1, NIST AI 600-1, NIST SP 800-53. See the [authority crosswalk](../references/Authority-Crosswalk.md).
+Executive Order N-12-23; GC 11546.45.5, 11549.63–11549.66, 7929.210, 8592.45, 12270 et seq., 3512 et seq.; Civil Code 1798 et seq., 3110–3111; SAM 1600, 4819.2, 4983.1, 4986–4986.13, 5305.5, 5310, 5335; SIMM 19H, 140, 141, 150, 22, 5305-F, 5310-C, 5340-A, 5340-C; SCM Vol. 2 Ch. 23; NIST AI 100-1, NIST AI 600-1, NIST SP 800-53. See the [authority crosswalk](../references/Authority-Crosswalk.md).
 
 ## 8. Related documents
 [Committee Charter](./AI-Governance-Committee-Charter.md) · [Standards](../standards/) · [Procedures](../procedures/) · [Forms](../forms/) · [AI Inventory](../inventory/) · [Procedure Map](../PROCEDURE-MAP.md)

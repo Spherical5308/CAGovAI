@@ -84,7 +84,7 @@ Measured in business days from a complete Assessment Package, excluding time wai
 The Coordinator reports performance against these targets to the Committee each quarter.
 
 ## 7. Records
-Agendas, Assessment Packages, minutes, votes, Risk Acceptances and decisions are records kept under [State Entity]'s retention schedule. Completed SIMM 5305-F, SIMM 150 and security reviews are confidential (GC 7929.210) and are kept in a restricted location.
+Agendas, Assessment Packages, minutes, votes, Risk Acceptances and decisions are records kept under [State Entity]'s retention schedule. Completed SIMM 5305-F, SIMM 150 and security reviews are treated as confidential (GC 7929.210, 8592.45; Chief Counsel decides any records request) and are kept in a restricted location.
 
 ## 8. Signature
 | Role | Name | Signature | Date |
