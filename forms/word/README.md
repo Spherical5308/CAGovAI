@@ -13,7 +13,7 @@ Word versions of every form and assessment in [forms/](../). Open one in Microso
 | AI Workforce Impact Assessment | [Workforce-Impact-Assessment.docx](./Workforce-Impact-Assessment.docx) | [Workforce-Impact-Assessment.md](../Workforce-Impact-Assessment.md) |
 | Rating Scales (reference, not a form) | [Rating-Scales.docx](./Rating-Scales.docx) | [Rating-Scales.md](../Rating-Scales.md) |
 
-Each form opens with **How to complete this form**: who fills it in, when, and where it goes. Forms that ask for Likelihood, Severity or a risk Level print the Rating Scales as an appendix.
+Each form opens with **How to complete this form**: who fills it in, when, and where it goes. Forms that ask for Likelihood, Severity or a Risk Rating print the Rating Scales as an appendix.
 
 To download from GitHub, open the file and click **Download raw file**.
 

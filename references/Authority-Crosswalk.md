@@ -29,6 +29,7 @@ Where each State requirement and NIST AI RMF function is met in this framework. 
 | SAM 4986.12 | Acceptable use; prohibited content; human verification | [Acceptable Use Standard](../standards/Acceptable-Use-Standard.md) |
 | SAM 4986.13 | Role-based GenAI training | [Acceptable Use Standard](../standards/Acceptable-Use-Standard.md) §2; [Workforce Impact Assessment](../forms/Workforce-Impact-Assessment.md) §5 |
 | SAM 5305.5 | Inventory and classify information assets; FIPS 199 categorisation; personal and medical information at least FIPS 199 Moderate | [Data and Tier Floor Standard](../standards/Data-and-Tier-Floor-Standard.md) §1 |
+| SAM 5305.1; SAM 5305.6; SIMM 5305-B | State entity head accountable for risk; documented risk tolerance; Risk Register and Plan of Action and Milestones | [Policy](../policy/AI-Governance-Policy.md) §4.2; [Rating Scales](../forms/Rating-Scales.md#risk-tolerance-and-who-accepts-residual-risk); [Decision Record](../forms/Decision-Record.md) |
 | SIMM 5305-F | GenAI risk assessment, all tiers; Part 2 for Moderate/High; CIO/ISO signatures; Labor Relations copy; CDT submission by tier and route | [Procedure 01](../procedures/01-Request-and-Approval.md) Stage D; ADR-0001 |
 | SIMM 150 | Office-productivity GenAI assessment | [Procedure 01](../procedures/01-Request-and-Approval.md) D1; [Approved Uses Register](../forms/Approved-Uses-Register.md) |
 | SIMM 5310-C | Privacy Threshold and Impact Assessments | [Data and Tier Floor Standard](../standards/Data-and-Tier-Floor-Standard.md) §4 |
@@ -36,10 +37,10 @@ Where each State requirement and NIST AI RMF function is met in this framework. 
 ## NIST AI Risk Management Framework (AI 100-1)
 | Function | What it asks | Where met |
 |---|---|---|
-| **Govern** | Policies, accountability, roles, culture, third-party risk | [Policy](../policy/AI-Governance-Policy.md); [Charter](../policy/AI-Governance-Committee-Charter.md); [Autonomy Standard](../standards/Autonomy-and-Agent-Standard.md); vendor evaluation |
+| **Govern** | Policies, accountability, roles, culture, third-party risk; documented risk tolerance (GOVERN 1.3, MAP 1.5); executive responsibility for AI risk decisions (GOVERN 2.3) | [Policy](../policy/AI-Governance-Policy.md); [Charter](../policy/AI-Governance-Committee-Charter.md); [Rating Scales](../forms/Rating-Scales.md); [Autonomy Standard](../standards/Autonomy-and-Agent-Standard.md); vendor evaluation |
 | **Map** | Context, intended use, affected people, risk categorisation | [Intake Form](../forms/Intake-Form.md); [AI Impact Assessment](../forms/AI-Impact-Assessment.md) §1–2, §4; Tier Floors |
 | **Measure** | Test, evaluate, track metrics, including bias and robustness | [AI Impact Assessment](../forms/AI-Impact-Assessment.md) §3; [Procedure 03](../procedures/03-Monitoring-and-Re-review.md) §2 |
-| **Manage** | Prioritise and act on risk, respond to incidents, decommission | Decision tiers; [Risk Acceptance](../forms/Risk-Acceptance.md); [Procedure 03](../procedures/03-Monitoring-and-Re-review.md); [Procedure 04](../procedures/04-AI-Incident-Handling.md) |
+| **Manage** | Prioritise and act on risk, respond to incidents, decommission | Decision tiers; residual-risk handling in the [Rating Scales](../forms/Rating-Scales.md); [Risk Acceptance](../forms/Risk-Acceptance.md); [Procedure 03](../procedures/03-Monitoring-and-Re-review.md); [Procedure 04](../procedures/04-AI-Incident-Handling.md) |
 
 NIST AI 600-1 (Generative AI Profile) risk areas are the rows of the [AI Impact Assessment](../forms/AI-Impact-Assessment.md) §4 harm table.
 

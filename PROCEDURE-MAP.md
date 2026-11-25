@@ -117,6 +117,7 @@ The authoritative, current list is in [Procedure 01, section 6](./procedures/01-
 | 8b | Decide Moderate | Committee | Majority vote | Package → approve / reject | SAM 4986.9(A) multidisciplinary team |
 | 8c | Recommend High | Committee | Majority vote | Package → recommendation | same |
 | 9 | ISO dissent handling | Committee | Director | Dissent → Risk Acceptance | ADR-0001 |
+| 9a | High residual Risk Rating | Decider for the tier | Director accepts in writing, or do not proceed | AI Impact Assessment §7 → Decision Record; security/privacy risks → SIMM 5305-B Risk Register | SAM 5305.1; NIST RMF *Govern 2.3, Manage 1*; ADR-0005 |
 | 10 | CDT consultation | Coordinator | CDT advises | 5305-F → consult record | SAM 4986.9 |
 | 11 | Approve High | Director | Director (Agency optional) | Recommendation → approval | NIST RMF *Govern 2* |
 | 12 | Issue Request ID; update AI Inventory | Coordinator | — | Approval → Request ID, Inventory record | SAM 4986.3; GC 11546.45.5 |

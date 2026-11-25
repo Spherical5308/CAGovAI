@@ -39,6 +39,8 @@ This policy sets how [State Entity] decides whether, and on what terms, it will 
 ### 4.2 Risk Tiers
 Every Request receives one **Risk Tier**: Prohibited, Pre-approved, Low, Moderate or High. Low, Moderate and High follow the SIMM 5305-F GenAI Risk Assessment scale. The tier is the highest of the SIMM 5305-F result and every **Tier Floor** that applies.
 
+Individual risks found during assessment are given a **Risk Rating** (Low, Medium or High) using the [Rating Scales](../forms/Rating-Scales.md), which also set [State Entity]'s AI **risk tolerance** (NIST AI RMF MAP 1.5; SAM 5305.6). The decider for a Request's tier accepts residual risk up to Medium as part of its decision. Only the Director may accept a High residual Risk Rating, in writing (SAM 5305.1; NIST AI RMF GOVERN 2.3).
+
 ### 4.3 Prohibited uses
 [State Entity] will not use AI for any purpose listed in the [Acceptable Use Standard, section 4](../standards/Acceptable-Use-Standard.md#4-prohibited-uses).
 
@@ -90,7 +92,7 @@ Departures from a Standard may be granted only through the [Exceptions Procedure
 ## 5. Roles and responsibilities
 | Role | Responsibility |
 |---|---|
-| **Director** | Approves this Policy, High-tier Requests, Risk Acceptances and Exceptions. |
+| **Director** | Approves this Policy, High-tier Requests, Risk Acceptances and Exceptions, and accepts any High residual Risk Rating. |
 | **Executive Sponsor** | Chairs the AI Governance Committee; accountable for the AI program. |
 | **AI Governance Committee** | Decides Moderate Requests, recommends High Requests, confirms Suspensions, approves Exceptions, oversees the AI Inventory. |
 | **AI Governance Coordinator** (CIO's office) | Runs intake, screening and triage; maintains the AI Inventory; schedules Re-reviews; publishes transparency information. |

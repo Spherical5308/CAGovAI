@@ -20,8 +20,10 @@ How Markdown becomes form fields:
     **Label:** · **Label:** header line                   a two-column field table
 """
 import csv
+import datetime
 import os
 import re
+import zipfile
 
 from docx import Document
 from docx.enum.section import WD_ORIENT
@@ -485,6 +487,7 @@ def expand_includes(lines, base_dir):
 
 
 def build_form(md_path, out_path):
+    _sdt_id[0] = 1000  # content-control ids restart per document, so files build independently
     name = os.path.splitext(os.path.basename(md_path))[0]
     landscape = name in LANDSCAPE
     with open(md_path, encoding="utf-8") as fh:
@@ -603,7 +606,30 @@ def build_form(md_path, out_path):
                 answer_box(doc)
         i += 1
     set_cell_margins(doc)
+    doc.core_properties.created = FIXED_TIME
+    doc.core_properties.modified = FIXED_TIME
+    doc.core_properties.last_printed = FIXED_TIME
     doc.save(out_path)
+    normalise_zip(out_path)
+
+
+def normalise_zip(path):
+    """Rewrite an Office file with fixed timestamps so an unchanged source gives a
+    byte-identical file, which lets CI check that the generated files are current."""
+    with zipfile.ZipFile(path) as z:
+        items = [(i.filename, z.read(i.filename)) for i in z.infolist()]
+    # openpyxl stamps the save time into docProps/core.xml; pin it
+    items = [(n, re.sub(rb"(<dcterms:(?:created|modified)[^>]*>)[^<]*", rb"\g<1>2026-01-01T00:00:00Z", d)
+              if n == "docProps/core.xml" else d) for n, d in items]
+    with zipfile.ZipFile(path, "w", zipfile.ZIP_DEFLATED) as z:
+        for name, data in items:
+            info = zipfile.ZipInfo(name, date_time=(2026, 1, 1, 0, 0, 0))
+            info.compress_type = zipfile.ZIP_DEFLATED
+            info.external_attr = 0o644 << 16
+            z.writestr(info, data)
+
+
+FIXED_TIME = datetime.datetime(2026, 1, 1)
 
 
 # =========================================================================
@@ -788,7 +814,10 @@ def build_inventory(out_path):
     wb.active = 0
     wb.properties.creator = "CAGovAI"
     wb.properties.title = "AI Inventory"
+    wb.properties.created = FIXED_TIME
+    wb.properties.modified = FIXED_TIME
     wb.save(out_path)
+    normalise_zip(out_path)
 
 
 def main():

@@ -1,4 +1,4 @@
-name: Check links
+name: Checks
 
 on:
   pull_request:
@@ -19,3 +19,19 @@ jobs:
           persist-credentials: false
       - name: Check relative links and anchors in Markdown
         run: python3 scripts/check_links.py .
+
+  generated:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Install pinned build dependencies
+        run: python3 -m pip install --user python-docx==1.2.0 openpyxl==3.1.5
+      - name: Rebuild diagrams, Word forms and Excel inventory
+        run: |
+          python3 scripts/build_diagrams.py
+          python3 scripts/build_office.py
+      - name: Check the committed files match their sources
+        run: python3 scripts/check_generated.py

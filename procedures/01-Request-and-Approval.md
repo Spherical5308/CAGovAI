@@ -61,6 +61,8 @@ Use it whenever a Use Case is not **Pre-approved**: the Tool is new, the use is 
 
 If the ISO dissents on an approved item, the approval waits for a Director-signed [Risk Acceptance](../forms/Risk-Acceptance.md).
 
+The decider accepts residual risk up to Medium as part of its decision and records the residual Risk Rating on the Decision Record. If any residual Risk Rating is still High, the approval waits until it is brought down to Medium or the Director accepts it in writing ([Rating Scales](../forms/Rating-Scales.md#risk-tolerance-and-who-accepts-residual-risk); ADR-0005). The ISO adds security and privacy risks still at Medium or High to the SIMM 5305-B Risk Register.
+
 ### Stage F: Approve and act
 | Step | Who | Action |
 |---|---|---|

@@ -39,9 +39,9 @@
 Describe the test data and how it represents real use. For a POC, testing uses public data only (SAM 4986.6).
 
 ## 4. Harm analysis (NIST Map 5.1; AI 600-1 risk areas)
-Mark each area relevant or not. For each relevant one, describe the harm, rate its Likelihood and Severity (Low / Medium / High), read the Level from the matrix, and describe the mitigation. Use the [Rating Scales](./Rating-Scales.md). Rate with the controls already in place; the residual rating after mitigation goes in section 7.
+Mark each area relevant or not. For each relevant one, describe the harm, rate its Likelihood and Severity (Low / Medium / High), read the Risk Rating from the matrix, and describe the mitigation. Use the [Rating Scales](./Rating-Scales.md). Rate with the controls already in place; the residual rating after mitigation goes in section 7.
 
-| Area | Relevant? | Harm | Likelihood | Severity | Level | Mitigation | Owner |
+| Area | Relevant? | Harm | Likelihood | Severity | Risk Rating | Mitigation | Owner |
 |---|:-:|---|---|---|---|---|---|
 | Confabulation (wrong or invented output relied on) | | | | | | | |
 | Harmful bias or unequal treatment | | | | | | | |
@@ -68,9 +68,9 @@ Mark each area relevant or not. For each relevant one, describe the harm, rate i
 3. What goes in the public AI use summary.
 
 ## 7. Residual risk and recommendation
-List each risk still Medium or High after mitigation. Rate it again with the [Rating Scales](./Rating-Scales.md); the scales also say who should accept each Level.
+List each risk still Medium or High after mitigation. Rate it again with the [Rating Scales](./Rating-Scales.md); the scales also say who should accept each Risk Rating.
 
-| Residual risk | Level | Accepted by |
+| Residual risk | Risk Rating | Accepted by |
 |---|---|---|
 | | | |
 
