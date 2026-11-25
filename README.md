@@ -39,6 +39,9 @@ It is grounded in California law and policy (EO N-12-23, SAM 4986, SIMM 5305-F /
 ## Adopting it
 Replace bracketed placeholders such as `[State Entity]` with your own names. Sections marked *(EB)* rest on SAM chapters that bind Executive Branch State Entities. Constitutional offices and other non-Executive Branch entities should adopt the whole framework and swap in their own authority; several GenAI chapters (SAM 4986.4, .9, .10, .11) apply to every State Entity anyway. See the [Non-Executive Branch adoption note](./docs/Non-Executive-Branch-Adoption.md).
 
+## Contributing
+Corrections from practitioners keep this accurate as law and policy change. See [CONTRIBUTING.md](./CONTRIBUTING.md), the [Code of Conduct](./CODE_OF_CONDUCT.md) and, for anything sensitive, [SECURITY.md](./SECURITY.md). Changes are listed in the [CHANGELOG](./CHANGELOG.md).
+
 ## License
 - Documents, forms and templates: [Creative Commons Attribution 4.0 International](./LICENSE) (CC BY 4.0).
 - Scripts and code, if any: [MIT](./LICENSE-CODE).

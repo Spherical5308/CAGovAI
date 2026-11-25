@@ -1,0 +1,37 @@
+name: Law or policy change
+description: A new or amended law, SAM/SIMM revision, CDT Technology Letter, Policy Statement or memo that affects this framework.
+title: "[Change] "
+labels: ["law-change"]
+body:
+  - type: input
+    id: authority
+    attributes:
+      label: What changed
+      placeholder: e.g. SIMM 5305-F revised; AB 2412 chaptered; CDT PS-0XX issued
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: Effective or issue date
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Link to the official text
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Which documents does it affect, and how?
+      description: Name files or sections if you can.
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Who does it apply to?
+      options:
+        - All State Entities
+        - Executive Branch only
+        - Not sure
