@@ -39,6 +39,8 @@ It is grounded in California law and policy (EO N-12-23, SAM 4986, SIMM 5305-F /
 - **Only the Director accepts a High residual risk**, following SAM 5305.1, SIMM 5305-B and NIST AI RMF ([ADR-0005](./docs/adr/0005-director-accepts-high-residual-risk.md)).
 
 ## Adopting it
+Start with the [Adoption Kit](./adoption/): a 90-day rollout plan, the Committee kickoff agenda, a GenAI training outline mapped to SAM 4986.13, and a checklist of placeholders to replace.
+
 Replace bracketed placeholders such as `[State Entity]` with your own names. Sections marked *(EB)* rest on SAM chapters that bind Executive Branch State Entities. Constitutional offices and other non-Executive Branch entities should adopt the whole framework and swap in their own authority; several GenAI chapters (SAM 4986.4, .9, .10, .11) apply to every State Entity anyway. See the [Non-Executive Branch adoption note](./docs/Non-Executive-Branch-Adoption.md).
 
 ## Contributing

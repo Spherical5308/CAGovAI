@@ -3,6 +3,8 @@
 Notable changes to CAGovAI. Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versions follow `MAJOR.MINOR.PATCH`: MAJOR changes the framework's shape (decision rights, tiers, scope); MINOR adds or substantially revises a document; PATCH corrects citations or wording.
 
 ## [Unreleased]
+### Added
+- Adoption Kit (`adoption/`): 90-day rollout plan, Committee kickoff agenda with a standing monthly agenda, role-based GenAI training outline mapped to SAM 4986.13, and a placeholder checklist.
 
 ## [0.2.0] - 2026-11-25
 Word and Excel versions, rating scales and form instructions. While the version is below 1.0, changes to the framework's shape (here ADR-0005) bump MINOR rather than MAJOR.
