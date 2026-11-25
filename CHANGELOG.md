@@ -3,13 +3,12 @@
 Notable changes to CAGovAI. Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versions follow `MAJOR.MINOR.PATCH`: MAJOR changes the framework's shape (decision rights, tiers, scope); MINOR adds or substantially revises a document; PATCH corrects citations or wording.
 
 ## [Unreleased]
-### Added
-- Contributor and community files: CONTRIBUTING, Code of Conduct, SECURITY policy, issue and pull request templates, CODEOWNERS.
-- Link-check workflow and script.
 
 ## [0.1.0] - 2026-11-24
 First public draft.
 ### Added
+- Contributor and community files: CONTRIBUTING, Code of Conduct, SECURITY policy, issue and pull request templates, CODEOWNERS.
+- Link-check workflow and script.
 - Procedure map, glossary and four decision records (ISO votes without veto; one intake for all AI; approve Tools once; procurement as enforcement gate).
 - AI Governance Policy and AI Governance Committee Charter.
 - Standards: Acceptable Use; Data and Tier Floor; Autonomy and Agent.
