@@ -92,6 +92,18 @@ _Avoid_: agent vs. non-agent, automation level
 The minimum Risk Tier a Trigger forces regardless of other answers (e.g. personal data sets a floor of Moderate).
 _Avoid_: override, bump
 
+**Risk Rating**:
+Low, Medium or High for one identified risk, read from the Likelihood and Severity matrix in the [Rating Scales](./forms/Rating-Scales.md). A Request has one Risk Tier but may have many Risk Ratings.
+_Avoid_: risk level; "Moderate" (that word belongs to Risk Tiers)
+
+**Residual risk**:
+The Risk Rating left after mitigations and compensating controls (NIST AI RMF: risk remaining after risk treatment).
+_Avoid_: remaining risk, net risk
+
+**Risk tolerance**:
+How much residual risk [State Entity] will accept, and who may accept it, as documented in the [Rating Scales](./forms/Rating-Scales.md#risk-tolerance-and-who-accepts-residual-risk) (NIST AI RMF MAP 1.5; SAM 5305.6). A High residual Risk Rating is outside tolerance unless the Director accepts it in writing.
+_Avoid_: risk appetite
+
 ## Lifecycle
 
 **Assessment Package**:

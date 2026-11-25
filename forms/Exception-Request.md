@@ -20,7 +20,7 @@
 Why the requirement cannot be met now, and what it would take to meet it.
 
 ## 3. Risk
-What could go wrong while the requirement is not met, how likely it is, and who would be affected. Give its Likelihood, Severity and Level using the [Rating Scales](./Rating-Scales.md).
+What could go wrong while the requirement is not met, how likely it is, and who would be affected. Give its Likelihood, Severity and Risk Rating using the [Rating Scales](./Rating-Scales.md).
 
 ## 4. Compensating controls
 | Control | Owner | In place by |

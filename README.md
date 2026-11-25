@@ -26,7 +26,7 @@ It is grounded in California law and policy (EO N-12-23, SAM 4986, SIMM 5305-F /
 | Standard | [Acceptable Use](./standards/Acceptable-Use-Standard.md) · [Data and Tier Floor](./standards/Data-and-Tier-Floor-Standard.md) · [Autonomy and Agent](./standards/Autonomy-and-Agent-Standard.md) |
 | Procedure | [01 Request and Approval](./procedures/01-Request-and-Approval.md) · [02 AI Inventory](./procedures/02-AI-Inventory.md) · [03 Monitoring and Re-review](./procedures/03-Monitoring-and-Re-review.md) · [04 AI Incident Handling](./procedures/04-AI-Incident-Handling.md) · [05 Exceptions](./procedures/05-Exceptions.md) |
 | Form | [Intake Form](./forms/Intake-Form.md) · [Approved Uses Register](./forms/Approved-Uses-Register.md) · [Decision Record](./forms/Decision-Record.md) · [Risk Acceptance](./forms/Risk-Acceptance.md) · [Exception Request](./forms/Exception-Request.md) |
-| Assessment | [AI Impact Assessment](./forms/AI-Impact-Assessment.md) · [Workforce Impact Assessment](./forms/Workforce-Impact-Assessment.md) · [Rating Scales](./forms/Rating-Scales.md) for Likelihood, Severity and risk Level · plus State forms SIMM 5305-F, SIMM 150, SIMM 5310-C (linked, not copied) |
+| Assessment | [AI Impact Assessment](./forms/AI-Impact-Assessment.md) · [Workforce Impact Assessment](./forms/Workforce-Impact-Assessment.md) · [Rating Scales](./forms/Rating-Scales.md) for Likelihood, Severity and Risk Rating · plus State forms SIMM 5305-F, SIMM 150, SIMM 5310-C (linked, not copied) |
 | Inventory | [AI Inventory templates and field guide](./inventory/) |
 | Word and Excel | [Fillable Word versions of every form and assessment](./forms/word/) · [AI Inventory workbook](./inventory/AI-Inventory.xlsx) |
 
@@ -36,6 +36,7 @@ It is grounded in California law and policy (EO N-12-23, SAM 4986, SIMM 5305-F /
 - **Risk Tiers follow SIMM 5305-F** (Low / Moderate / High), plus Prohibited and Pre-approved.
 - **A multidisciplinary committee decides by majority.** InfoSec votes but cannot veto; a dissent requires a Director-signed Risk Acceptance ([ADR-0001](./docs/adr/0001-iso-votes-but-cannot-veto.md)).
 - **Procurement is the enforcement gate** ([ADR-0004](./docs/adr/0004-procurement-gate-requires-request-id.md)).
+- **Only the Director accepts a High residual risk**, following SAM 5305.1, SIMM 5305-B and NIST AI RMF ([ADR-0005](./docs/adr/0005-director-accepts-high-residual-risk.md)).
 
 ## Adopting it
 Replace bracketed placeholders such as `[State Entity]` with your own names. Sections marked *(EB)* rest on SAM chapters that bind Executive Branch State Entities. Constitutional offices and other non-Executive Branch entities should adopt the whole framework and swap in their own authority; several GenAI chapters (SAM 4986.4, .9, .10, .11) apply to every State Entity anyway. See the [Non-Executive Branch adoption note](./docs/Non-Executive-Branch-Adoption.md).
