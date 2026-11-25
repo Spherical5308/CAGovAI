@@ -27,7 +27,7 @@
 | 1.9 | List the AI Tools already licensed (for example an enterprise copilot) and draft an [Approved Uses Register](../forms/Approved-Uses-Register.md) for each. | CIO, Tool owners | Draft registers ready for the first meeting | [Procedure 01](../procedures/01-Request-and-Approval.md) §5 |
 | 1.10 | Plan the discovery sweep: software inventory, SaaS and browser-extension logs, expense and P-card records, network logs for known AI services. | CIO, ISO | Sources and owners agreed | Procedure 02 §4.3 |
 | 1.11 | Ask Procurement to add the Request ID check to requisitions and the GenAI disclosure clause to solicitations. | Procurement and Contracting Officer | Change ready to switch on at Day 0 | SAM 4986.9; SCM Vol. 2 Ch. 23; ADR-0004 |
-| 1.12 | Confirm the training plan and courses for each audience in the [Training Outline](./GenAI-Training-Outline.md). | Coordinator, HR/Training | Courses and tracking ready | SAM 4986.13 *(EB)* |
+| 1.12 | Confirm the training plan, enrol staff in the State-provided courses and build the entity supplements listed in the [Training Outline](./GenAI-Training-Outline.md#state-provided-courses). | Coordinator, HR/Training | Courses and tracking ready | SAM 4986.13 *(EB)* |
 | 1.13 | Confirm with CDT the current submission rule for your main procurement routes. | Coordinator | Rule noted in Procedure 01 §4 | SAM 4986.9; CDT PS-033 |
 | 1.14 | Director approves and signs the Policy and Charter and sets the effective date (Day 0). | Director | Signed; Day 0 set | Policy header; Charter §8 |
 

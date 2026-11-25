@@ -3,8 +3,12 @@
 Notable changes to CAGovAI. Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versions follow `MAJOR.MINOR.PATCH`: MAJOR changes the framework's shape (decision rights, tiers, scope); MINOR adds or substantially revises a document; PATCH corrects citations or wording.
 
 ## [Unreleased]
+
+## [0.3.0] - 2026-11-25
+Adoption kit.
 ### Added
 - Adoption Kit (`adoption/`): 90-day rollout plan, Committee kickoff agenda with a standing monthly agenda, role-based GenAI training outline mapped to SAM 4986.13, and a placeholder checklist.
+- Training outline: which State-provided courses (CalHR and ODI Foundations of GenAI, CDT GenAI Technical Training, DGS CalPCA procurement training) cover each module, and which parts each entity must build.
 
 ## [0.2.0] - 2026-11-25
 Word and Excel versions, rating scales and form instructions. While the version is below 1.0, changes to the framework's shape (here ADR-0005) bump MINOR rather than MAJOR.
@@ -41,6 +45,7 @@ First public draft.
 - CDT submission routed by tier and procurement route (CDT PS-033, June 30, 2026; SAM 4986.9 rev. 11/2025).
 - Citations corrected against current text (GC 7929.210, 8592.45, 11546.45.5, 11549.66; SAM 5305.5; GC 12270–12279; Civil Code 3111).
 
-[Unreleased]: https://github.com/Spherical5308/CAGovAI/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/Spherical5308/CAGovAI/compare/v0.3.0...HEAD
+[0.3.0]: https://github.com/Spherical5308/CAGovAI/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/Spherical5308/CAGovAI/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/Spherical5308/CAGovAI/releases/tag/v0.1.0
